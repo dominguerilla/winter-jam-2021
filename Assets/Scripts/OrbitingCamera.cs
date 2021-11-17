@@ -43,6 +43,9 @@ public class OrbitingCamera : MonoBehaviour
     Vector2 inputMovement;
     Camera regularCamera;
 
+    Quaternion gravityAlignment = Quaternion.identity;
+    Quaternion orbitRotation;
+
     //TODO: Study how this is calculated. What does FOV mean for cameras? Aspect? nearClipPlane? Why use Tan()?
     Vector3 CameraHalfExtends {
         get{
@@ -59,19 +62,20 @@ public class OrbitingCamera : MonoBehaviour
     {
         regularCamera = GetComponent<Camera>();
         UpdateFocusPosition();
-        transform.localRotation = Quaternion.Euler(orbitAngles);
+        transform.localRotation = orbitRotation = Quaternion.Euler(orbitAngles);
     }
     private void LateUpdate()
     {
+        gravityAlignment =
+            Quaternion.FromToRotation(
+                gravityAlignment * Vector3.up, CustomGravity.GetUpAxis(focusPosition)
+            ) * gravityAlignment;
         UpdateFocusPosition();
-        Quaternion lookRotation;
         if(ManualRotation() || AutomaticRotation()){
             ConstrainAngles();
-            lookRotation = Quaternion.Euler(orbitAngles);
-        }else{
-            lookRotation = transform.localRotation;
+            orbitRotation = Quaternion.Euler(orbitAngles);
         }
-        
+        Quaternion lookRotation = gravityAlignment * orbitRotation;
         Vector3 lookDirection = lookRotation *  Vector3.forward;
         Vector3 lookPosition = focusPosition - lookDirection * distance;
 
@@ -140,9 +144,10 @@ public class OrbitingCamera : MonoBehaviour
             return false;
         }
 
+        Vector3 alignedDelta = Quaternion.Inverse(gravityAlignment) * (focusPosition - previousFocusPosition);
         Vector2 movement = new Vector2(
-            focusPosition.x - previousFocusPosition.x,
-            focusPosition.z - previousFocusPosition.z
+            alignedDelta.x,
+            alignedDelta.z
         );
         float sqrMagnitude = movement.sqrMagnitude;
         if(sqrMagnitude < 0.000001f){

@@ -47,11 +47,12 @@ public class MovingSphereCustomGravity : MonoBehaviour
 
     int jumpPhase;
     int physicsStepsSinceLastGrounded, physicsStepsSinceLastJumped;
-    float minGroundDotProduct, minStairsDotProduct; 
+    float minGroundDotProduct, minStairsDotProduct;
 
     private void Awake()
     {
         body = GetComponent<Rigidbody>();
+        body.useGravity = false;
         meshRenderer = GetComponent<Renderer>();
         OnValidate();
     }
@@ -66,13 +67,6 @@ public class MovingSphereCustomGravity : MonoBehaviour
     {
         inputMovement = value.Get<Vector2>();
         inputMovement = Vector2.ClampMagnitude(inputMovement, 1f);
-        if(playerInputSpace){
-            rightAxis = ProjectDirectionOnPlane(playerInputSpace.right, upAxis);
-            forwardAxis = ProjectDirectionOnPlane(playerInputSpace.forward, upAxis);
-        }else{
-            rightAxis = ProjectDirectionOnPlane(Vector3.right, upAxis);
-            forwardAxis = ProjectDirectionOnPlane(Vector3.forward, upAxis);
-        }
         desiredVelocity = new Vector3(inputMovement.x, 0f, inputMovement.y) * maxSpeed;
 
     }
@@ -82,21 +76,34 @@ public class MovingSphereCustomGravity : MonoBehaviour
         wantedToJump |= true;
     }
 
+    private void Update()
+    {
+        if (playerInputSpace)
+        {
+            rightAxis = ProjectDirectionOnPlane(playerInputSpace.right, upAxis);
+            forwardAxis = ProjectDirectionOnPlane(playerInputSpace.forward, upAxis);
+        }
+        else
+        {
+            rightAxis = ProjectDirectionOnPlane(Vector3.right, upAxis);
+            forwardAxis = ProjectDirectionOnPlane(Vector3.forward, upAxis);
+        }
+    }
     private void FixedUpdate()
     {
-        upAxis = -Physics.gravity.normalized;
+        Vector3 gravity = CustomGravity.GetGravity(body.position, out upAxis);
         UpdateState();
         AdjustVelocity();
         if (wantedToJump)
         {
             wantedToJump = false;
-            Jump();
+            Jump(gravity);
         }
 
+        velocity += gravity * Time.deltaTime;
         body.velocity = velocity;
         ClearState();
     }
-
 
     void UpdateState()
     {
@@ -132,7 +139,7 @@ public class MovingSphereCustomGravity : MonoBehaviour
     }
 
 
-    void Jump()
+    void Jump(Vector3 gravity)
     {
         Vector3 jumpDirection;
         if (OnGround)
@@ -165,14 +172,14 @@ public class MovingSphereCustomGravity : MonoBehaviour
         // Add upward bias
         jumpDirection = (jumpDirection + upAxis).normalized;
 
-        float jumpSpeed = CalculateJumpSpeed(jumpHeight, jumpDirection);
+        float jumpSpeed = CalculateJumpSpeed(jumpHeight, jumpDirection, gravity);
         velocity += jumpDirection * jumpSpeed;
         
     }
 
-    float CalculateJumpSpeed(float height, Vector3 surfaceNormal)
+    float CalculateJumpSpeed(float height, Vector3 surfaceNormal, Vector3 gravity)
     {
-        float jumpSpeed = Mathf.Sqrt(2f * Physics.gravity.magnitude * height);
+        float jumpSpeed = Mathf.Sqrt(2f * gravity.magnitude * height);
         float alignedSpeed = Vector3.Dot(velocity, surfaceNormal);
         if (alignedSpeed > 0f)
         {
@@ -217,8 +224,8 @@ public class MovingSphereCustomGravity : MonoBehaviour
 
     void AdjustVelocity()
     {
-        Vector3 xAxis = ProjectDirectionOnPlane(rightAxis, contactNormal).normalized;
-        Vector3 zAxis = ProjectDirectionOnPlane(forwardAxis, contactNormal).normalized;
+        Vector3 xAxis = ProjectDirectionOnPlane(rightAxis, contactNormal);
+        Vector3 zAxis = ProjectDirectionOnPlane(forwardAxis, contactNormal);
 
         float currentX = Vector3.Dot(velocity, xAxis);
         float currentZ = Vector3.Dot(velocity, zAxis);
@@ -311,4 +318,31 @@ public class MovingSphereCustomGravity : MonoBehaviour
         }
         return false;
     }
+
+    #region DEBUG
+    private void OnDrawGizmos()
+    {
+        Gizmos.matrix = transform.localToWorldMatrix;
+        DrawOrientationAxes();
+    }
+    void DrawDesiredVelocityGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Vector3 xGizmo = new Vector3(desiredVelocity.x, 0, 0);
+        Vector3 zGizmo = new Vector3(0, 0, desiredVelocity.z);
+        Gizmos.DrawLine(Vector3.zero, xGizmo);
+        Gizmos.DrawLine(Vector3.zero, zGizmo);
+    }
+
+    void DrawOrientationAxes()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(Vector3.zero, upAxis);
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(Vector3.zero, rightAxis);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine(Vector3.zero, forwardAxis);
+
+    }
+    #endregion
 }
