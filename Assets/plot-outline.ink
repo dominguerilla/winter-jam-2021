@@ -52,8 +52,8 @@ You return to the hut. The night ends, and another day begins.
 = beat_1
 [The farmer has found that something has eaten her stored crop. Without this produce, she will (starve? go broke?)]
 [Farmer accompanies you to the demon world to forage, you find some food]
-[They run into demon thugs, who start harassing them]
-[Farmer kicks some ass, the demons flee]
+[They run into demon thugs, who start making fun of you]
+[The Farmer gets angry for you, kicks some ass, the demons flee]
 [You and the Farmer go back home laden with food]
 ->->
 
