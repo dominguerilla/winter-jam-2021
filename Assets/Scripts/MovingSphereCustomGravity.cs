@@ -1,37 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Sirenix.OdinInspector;
 
 public class MovingSphereCustomGravity : MonoBehaviour
 {
-
     [SerializeField]
     Transform playerInputSpace = default;
 
-    [SerializeField, Range(0, 100)]
+    [SerializeField, TabGroup("Speed & Jump"), Range(0, 100)]
     float maxSpeed = 10f;
 
-    [SerializeField, Range(0, 100)]
-    float maxAcceleration = 10f, maxAirAcceleration = 1f;
+    [SerializeField, TabGroup("Speed & Jump"), Range(0, 100)]
+    float maxAcceleration = 10f;
 
-    [SerializeField, Range(0, 10)]
+    [SerializeField, TabGroup("Speed & Jump"), Range(0, 100)]
+    float maxAirAcceleration = 1f;
+
+    [SerializeField, TabGroup("Speed & Jump"), Range(0, 10)]
     float jumpHeight = 2f;
 
-    [SerializeField, Range(0, 5)]
+    [SerializeField, TabGroup("Speed & Jump"), Range(0, 5)]
     int maxAirJumps = 0;
 
-    [SerializeField, Range(0f, 90f)]
-    float maxGroundAngle = 25f, maxStairsAngle = 50f;
+    [SerializeField, TabGroup("Ground Contact"), Range(0f, 90f)]
+    float maxGroundAngle = 25f;
 
-    [SerializeField, Range(0f, 100f)]
+    [SerializeField, TabGroup("Ground Contact"), Range(0f, 90f)]
+    float maxStairsAngle = 50f;
+
+    [SerializeField, TabGroup("Ground Contact"), Range(0f, 100f)]
     float maxSnapSpeed = 100f;
 
-    [SerializeField, Min(0f)]
+    [SerializeField, TabGroup("Ground Contact"), Min(0f)]
     float probeDistance = 1f;
 
-    [SerializeField]
-    LayerMask probeMask = -1, stairsMask = -1;
+    [SerializeField, TabGroup("Ground Contact")]
+    LayerMask probeMask = -1;
+    [SerializeField, TabGroup("Ground Contact")]
+    LayerMask stairsMask = -1;
 
     Vector2 inputMovement;
     Vector3 upAxis, rightAxis, forwardAxis;
