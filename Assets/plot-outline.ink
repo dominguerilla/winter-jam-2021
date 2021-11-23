@@ -70,6 +70,7 @@ You {~brew a tea|mix an ointment} for the Witch and begin the day's chores.
 The Farmer shares that her larder has been damaged, and her share of fruit has gone missing.
 She wonders if they attracted anything worse.
 ->->
+
 = beat_3
 Without warning, {planted_seed_type} demons approach the hut
 The Apprentice sees them coming and puts up a defense, and is almost defeated.
@@ -85,7 +86,10 @@ The Familiar burps up a piece of corn, which the Farmer recognizes.
 == MERCHANT_QUEST ==
 
 = beat_1
-    Here, you make the MERCHANT's first choice.
+    The Apprentice purchases groceries/reagents from the Merchant, by weight.
+    She sees that there is a mistake in the weight of her pouch; the Merchant has given too much.
+    When confronted, the Merchant says to consider it a get-well-soon gift for the Witch.
+    The Apprentice refuses the discount, pays the difference, and takes her leave.
     ->->
 = beat_2
     You plan to sell the mysterious fruit to the Merchant.
