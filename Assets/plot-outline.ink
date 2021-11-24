@@ -38,9 +38,9 @@ You {~brew a tea|mix an ointment} for the Witch and begin the day's chores.
 == BEAT_2 ==
 There {are|is} {two people|one person|no one else} asking for help.
 
-* [Help the Farmer]
+* [Listen to Farmer, who is at the front door]
   -> FARMER_QUEST.beat_2 -> BEAT_2
-* [Sell the mysterious fruit]
+* [Sell the fruit to the Merchant]
   -> MERCHANT_QUEST.beat_2 -> BEAT_2
 * [Listen to Child]
   -> CHILD_QUEST.beat_2 -> BEAT_2
@@ -53,7 +53,11 @@ You return to the hut.
 You speak with the Witch, updating her on the day and taking care of her. 
 The night ends, and another day begins.
 You {~brew a tea|mix an ointment} for the Witch and begin the day's chores.
--> DONE
+-> BEAT_3
+
+== BEAT_3 ==
+
+-> CLIMAX
 
 == FARMER_QUEST ==
 = beat_1
@@ -63,19 +67,13 @@ You {~brew a tea|mix an ointment} for the Witch and begin the day's chores.
 [The Apprentice turns away, thinking it not worth her time. The Farmer gets angry, kicks ass, the demons flee]
 [Grateful, the lesser demons lead the Apprentice and Farmer to a well-hidden orchard filled with ripe fruits and vegetables]
 [The lesser demons warn away from a certain fruit, which the Apprentice recognizes as being very valuable. She does not heed their warnings]
-[You and the Farmer go back home laden with food and mysterious fruit, and you split the bounty between the two of you]
+[The Apprentice and the Farmer go back home laden with food.]
+[The Apprentice keeps the fruit. She may be able to sell it.]
 ->->
 
 = beat_2
-The Farmer shares that her larder has been damaged, and her share of fruit has gone missing.
-She wonders if they attracted anything worse.
-->->
-
-= beat_3
-Without warning, {planted_seed_type} demons approach the hut
-The Apprentice sees them coming and puts up a defense, and is almost defeated.
-The Farmer comes to the rescue, 
-The Apprentice realizes they came from the fruit, and that there are probably more demons roaming about.
+The Farmer says that she has found strange tracks on the outskirts of the village.
+She warns the Apprentice to be careful walking through the woods.
 ->->
 
 = epilogue
@@ -93,7 +91,7 @@ The Familiar burps up a piece of corn, which the Farmer recognizes.
     ->->
 = beat_2
     You plan to sell the mysterious fruit to the Merchant.
-    You find the outside pantry door destroyed, and the fruit nowhere to be found.
+    You find the pantry outside destroyed, and the fruit nowhere to be found.
     ->->
 == CHILD_QUEST ==
 = beat_1
@@ -102,14 +100,27 @@ The Familiar burps up a piece of corn, which the Farmer recognizes.
   It animates small objects.
   ->->
 = beat_2
-  Child asks Apprentice to play with her.
-  Apprentice declines.
-  Suspiciously, the Child does not argue.
+  Child asks the Apprentice a few questions about how the wand works.
+  The Apprentice eagerly explains the wand's function and the meaning of the sigils carved into the wood.
+  The Child watches silently, eyes beaming at the Apprentice.
   ->->
 = beat_3
-  TODO: The Child has modified the wand--he has been watching the Apprentice closely, and wanted to impress her and be helpful
+  The Child is in his room.
+  The door is locked, and inside you can hear a faint humming.
 ->->
 -> DONE
+
+== CLIMAX ==
+On the night of the winter solstice, the health of the Witch takes a turn for the worse.
+She is writhing in agony, and the Apprentice works desperately to ease her pain.
+As the moon reaches its peak, the Witch shrieks--and the Apprentice hears strange noises outside.
+Hungry demons are wandering the woods, and they have just found the hut.
+She springs into action. Every door and window is locked and barred, and muffled rumbling and gnashing can be heard from beyond.
+The Apprentice watches from the center of her study. Her staff trembles--her preparations, complete.
+From the west, wood and stone are ripped asunder, and the demons begin their siege.
+
+
+->->
 /*
 Personality traits of the cast
 
