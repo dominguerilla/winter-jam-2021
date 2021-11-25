@@ -112,7 +112,7 @@ The Familiar burps up a piece of corn, which the Farmer recognizes.
 == RITUAL ==
 It is the night of the winter solstice.
 In a soft, silver light, {WITCH_NAME} writhes with agony. Her suffering will end tonight.
-As the moon reaches its peak, the Witch shrieks, and {APPRENTICE_NAME} hears them coming.
+As the moon reaches its peak, the Witch shrieks. {APPRENTICE_NAME} hears the rumbling and the growling from outside.
 
 She watches from the center of the study. Her staff trembles--her preparations, complete.
 From the west, wood and stone are ripped asunder, and the demons begin their siege.
@@ -134,19 +134,26 @@ Child: O+ C+ E- A+ N-
 Witch:
 Familiar:
 
-
-OVERALL PLOT IDEA:
-Witch has been sick for a while. Apprentice is caring for her
-The Witch's health takes a turn for the worse. The Apprentice becomes desperate
-Apprentice attempts a ritual to heal her and infuse her with power
+WINTER JAM ENTRY PLOT:
+Witch has been sick for a while. Apprentice is caring for her.
+The Witch's health takes a turn for the worse. The Apprentice becomes desperate.
+She finds an old formula for a cure-all ritual that may help the Witch.
+Over the course of the game, the Apprentice gathers ingredients.
+    TODO: Create needed ingredients based on possible cast choices?
+    - Hunter as a guide for some forest ingredient
+    - Merchant to special-order some exotic ingredient
+    - Child (parents paying for magic tutoring? could be the current source of income)
+    - Blacksmith to forge some medium
+    - Demon to find some alien ingredient
+On the final night, the Apprentice attempts the ritual.
 The ritual attracts unwanted attention. It succeeds; but the Witch disappears
+--- below would be done in a sequel
 The Apprentice + party embark on a journey to find her. They find out she is a legendary figure
 They find her. She is a shell of her former self, and must be defeated
 
-WINTER JAM ENTRY PLOT:
-Witch has been sick for a while. Apprentice is caring for her
-The Witch's health takes a turn for the worse. The Apprentice becomes desperate
-Apprentice attempts a ritual to heal her and infuse her with power
-The ritual attracts unwanted attention. It succeeds; but the Witch disappears
+COLOR SCHEMES:
+https://coolors.co/f7f7f2-e4e6c3-899878-222725-121113
+https://coolors.co/2274a5-e7dfc6-e9f1f7-131b23-816c61
+https://coolors.co/e0fbfc-c2dfe3-9db4c0-5c6b73-253237
 
 */
