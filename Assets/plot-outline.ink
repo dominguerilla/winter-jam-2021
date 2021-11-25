@@ -1,17 +1,16 @@
 TODO: This is a draft of a plot outline for this story.
+-> RITUAL
 
-LIST CROP_TYPES = corn, tomato
-VAR planted_seed_type = "corn"
-VAR farmer_did_fight = false
+VAR APPRENTICE_NAME="Alice"
+VAR WITCH_NAME="Rochelle"
+VAR TOWN_NAME="[TOWN NAME]"
 
--> INTRO
 == INTRO ==
-The witch lives in a hut with her familiar and her apprentice--you.
-She frequently receives requests from villagers living in the nearby hamlet, and takes great pride in providing her services.
-Two years ago, she became sick with some unknown disease, but insisted on continuing her work serving her clients.
-The Apprentice has agreed to take on the work if the Witch focuses on recuperating.
-The Apprentice has also been honing her skills as an enchanter and alchemist in order to improve the Witch's health and is hoping to find a cure.
-Funds are tight, and you worry that you are not making enough money to purchase the (sometimes expensive) reagents for your potions and spells.
+The witch {WITCH_NAME} lives in a hut in the forest on the outskirts of {TOWN_NAME}.
+She sells her potions and enchantments in a tiny storefront and is beloved by her customers for her [personal qualities].
+{WITCH_NAME} fell sick, but with the help of her apprentice {APPRENTICE_NAME} the shop continues to thrive.
+Two years quietly pass by. {APPRENTICE_NAME} and the Witch spend their days amidst bubbling cauldrons and softly floating books.
+Funds are tight, and {APPRENTICE_NAME} worries that they are not making enough to purchase the (sometimes expensive) reagents for your potions and spells.
 
 After {~grinding an herb mixture|crafting a pill} for the Witch, you begin the day's work.
 -> BEAT_1
@@ -57,7 +56,7 @@ You {~brew a tea|mix an ointment} for the Witch and begin the day's chores.
 
 == BEAT_3 ==
 
--> CLIMAX
+-> RITUAL
 
 == FARMER_QUEST ==
 = beat_1
@@ -110,17 +109,16 @@ The Familiar burps up a piece of corn, which the Farmer recognizes.
 ->->
 -> DONE
 
-== CLIMAX ==
-On the night of the winter solstice, the health of the Witch takes a turn for the worse.
-She is writhing in agony, and the Apprentice works desperately to ease her pain.
-As the moon reaches its peak, the Witch shrieks--and the Apprentice hears strange noises outside.
-Hungry demons are wandering the woods, and they have just found the hut.
-She springs into action. Every door and window is locked and barred, and muffled rumbling and gnashing can be heard from beyond.
-The Apprentice watches from the center of her study. Her staff trembles--her preparations, complete.
+== RITUAL ==
+It is the night of the winter solstice.
+In a soft, silver light, {WITCH_NAME} writhes with agony. Her suffering will end tonight.
+As the moon reaches its peak, the Witch shrieks, and {APPRENTICE_NAME} hears them coming.
+
+She watches from the center of the study. Her staff trembles--her preparations, complete.
 From the west, wood and stone are ripped asunder, and the demons begin their siege.
 
 
-->->
+-> END
 /*
 Personality traits of the cast
 
@@ -138,20 +136,17 @@ Familiar:
 
 
 OVERALL PLOT IDEA:
-Witch has been sick for a while
-One day, Apprentice takes over her daily work, cares for her
-Witch's health takes a turn for the worse--and then she suddenly vanishes
+Witch has been sick for a while. Apprentice is caring for her
+The Witch's health takes a turn for the worse. The Apprentice becomes desperate
+Apprentice attempts a ritual to heal her and infuse her with power
+The ritual attracts unwanted attention. It succeeds; but the Witch disappears
 The Apprentice + party embark on a journey to find her. They find out she is a legendary figure
 They find her. She is a shell of her former self, and must be defeated
 
 WINTER JAM ENTRY PLOT:
-Theme: Apprentice, cold and unfriendly to others except her mentor Witch and the Child, learns to rely on others for help
-Witch has been sick for a while
-Apprentice has taken over her work, serving her clients coldly but professionally
-1st beat:
-    - Child wants to play with Apprentice, Apprentice gives him a 'toy' wand that animates inanimate objects
-    - Farmer.beat_1
-    - MERCHANT ...?
-2
+Witch has been sick for a while. Apprentice is caring for her
+The Witch's health takes a turn for the worse. The Apprentice becomes desperate
+Apprentice attempts a ritual to heal her and infuse her with power
+The ritual attracts unwanted attention. It succeeds; but the Witch disappears
 
 */
