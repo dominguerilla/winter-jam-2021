@@ -5,79 +5,95 @@ VAR APPRENTICE_NAME="Alice"
 VAR WITCH_NAME="Rochelle"
 VAR TOWN_NAME="[TOWN NAME]"
 
+VAR INGREDIENT_1="Manastone"
+VAR INGREDIENT_2="Ritual Medium"
+VAR INGREDIENT_3="Divine Wine"
+
 == INTRO ==
 The witch {WITCH_NAME} lives in a hut in the forest on the outskirts of {TOWN_NAME}.
 She sells her potions and enchantments in a tiny storefront and is beloved by her customers for her [personal qualities].
 {WITCH_NAME} fell sick, but with the help of her apprentice {APPRENTICE_NAME} the shop continues to thrive.
-Two years quietly pass by. {APPRENTICE_NAME} and the Witch spend their days amidst bubbling cauldrons and softly floating books.
-Funds are tight, and {APPRENTICE_NAME} worries that they are not making enough to purchase the (sometimes expensive) reagents for your potions and spells.
+Two years quietly pass by. {APPRENTICE_NAME} and the Witch spend their days amidst bubbling cauldrons, flickering candles, and well-worn grimoires.
 
-After {~grinding an herb mixture|crafting a pill} for the Witch, you begin the day's work.
--> BEAT_1
+TODO: Write intro
+# Witch starts feeling feverish
+# Apprentice, worried, finds a ritual/potion that will help. She has to acquire certain ingredients.
+-> DAY_1.start
 
-== BEAT_1 ==
-There {are|are|is} {three people|two people|one person|no one} asking for help.
+== DAY_1 ==
+= start
+After {~grinding an herb mixture|crafting a pill} for the Witch and brewing a coffee for yourself, you begin the mid's work.
+-> DAY_1.mid
 
-* [Help the Farmer]
-  -> FARMER_QUEST.beat_1 -> BEAT_1
-* [Buy some reagents]
-  -> MERCHANT_QUEST.beat_1 -> BEAT_1
-* [Listen to Child]
-  -> CHILD_QUEST.beat_1 -> BEAT_1
+= mid
+You are looking for ingredients for the ritual.
+
+* [Look for the {INGREDIENT_1} in the forest]
+  -> HUNTER_QUEST.beat_1 -> DAY_1.mid
+* [Place an order for the {INGREDIENT_2}]
+  -> MERCHANT_QUEST.beat_1 -> DAY_1.mid
+* [Inquire at the church about {INGREDIENT_3}]
+  -> CLERIC_QUEST.beat_1 -> DAY_1.mid
 * -> 
-  It is time to head home. -> BEAT_1_NIGHT
+  It is time to head home. -> DAY_1.end
 
-== BEAT_1_NIGHT ==
+= end
+TODO: Write 'wind-down'
 You return to the hut. 
-You speak with the Witch, updating her on the day and taking care of her. 
-The night ends, and another day begins.
-You {~brew a tea|mix an ointment} for the Witch and begin the day's chores.
--> BEAT_2
+You speak with the Witch, updating her on the mid and taking care of her.
+-> DAY_2.start
 
-== BEAT_2 ==
+== DAY_2 ==
+
+= start 
+You {~brew a tea|mix an ointment} for the Witch and begin the mid's chores.
+-> mid
+
+= mid
 There {are|is} {two people|one person|no one else} asking for help.
 
-* [Listen to Farmer, who is at the front door]
-  -> FARMER_QUEST.beat_2 -> BEAT_2
+* [Listen to Hunter, who is at the front door]
+  -> HUNTER_QUEST.beat_2 -> DAY_2.mid
 * [Sell the fruit to the Merchant]
-  -> MERCHANT_QUEST.beat_2 -> BEAT_2
-* [Listen to Child]
-  -> CHILD_QUEST.beat_2 -> BEAT_2
+  -> MERCHANT_QUEST.beat_2 -> DAY_2.mid
+* [Listen to Cleric]
+  -> CLERIC_QUEST.beat_2 -> DAY_2.mid
 * -> 
-  It is time to head home. -> BEAT_2_NIGHT
+  It is time to head home. -> DAY_2.end
 -> DONE
 
-== BEAT_2_NIGHT ==
+= end
 You return to the hut. 
-You speak with the Witch, updating her on the day and taking care of her. 
-The night ends, and another day begins.
-You {~brew a tea|mix an ointment} for the Witch and begin the day's chores.
--> BEAT_3
+You speak with the Witch, updating her on the mid and taking care of her. 
+The night ends, and another mid begins.
+You {~brew a tea|mix an ointment} for the Witch and begin the mid's chores.
+-> DAY_3
 
-== BEAT_3 ==
+== DAY_3 ==
 
 -> RITUAL
 
-== FARMER_QUEST ==
+== HUNTER_QUEST ==
 = beat_1
-[The farmer has found that something has eaten her stored crop. Without this produce, she will (starve? go broke?)]
-[Farmer accompanies you to the demon world to forage, you find some food]
+TODO: Apprentice goes to forest by herself, gets into trouble, runs into the Hunter
+[The Hunter has found that something has eaten her stored crop. Without this produce, she will (starve? go broke?)]
+[Hunter accompanies you to the demon world to forage, you find some food]
 [They run into demon thugs, who are bullying lesser demons]
-[The Apprentice turns away, thinking it not worth her time. The Farmer gets angry, kicks ass, the demons flee]
-[Grateful, the lesser demons lead the Apprentice and Farmer to a well-hidden orchard filled with ripe fruits and vegetables]
+[The Apprentice turns away, thinking it not worth her time. The Hunter gets angry, kicks ass, the demons flee]
+[Grateful, the lesser demons lead the Apprentice and Hunter to a well-hidden orchard filled with ripe fruits and vegetables]
 [The lesser demons warn away from a certain fruit, which the Apprentice recognizes as being very valuable. She does not heed their warnings]
-[The Apprentice and the Farmer go back home laden with food.]
+[The Apprentice and the Hunter go back home laden with food.]
 [The Apprentice keeps the fruit. She may be able to sell it.]
 ->->
 
 = beat_2
-The Farmer says that she has found strange tracks on the outskirts of the village.
+The Hunter says that she has found strange tracks on the outskirts of the village.
 She warns the Apprentice to be careful walking through the woods.
 ->->
 
 = epilogue
-The Farmer wonders who raided her larder the first time.
-The Familiar burps up a piece of corn, which the Farmer recognizes.
+The Hunter wonders who raided her larder the first time.
+The Familiar burps up a piece of corn, which the Hunter recognizes.
 ->->
 
 == MERCHANT_QUEST ==
@@ -92,19 +108,19 @@ The Familiar burps up a piece of corn, which the Farmer recognizes.
     You plan to sell the mysterious fruit to the Merchant.
     You find the pantry outside destroyed, and the fruit nowhere to be found.
     ->->
-== CHILD_QUEST ==
+== CLERIC_QUEST ==
 = beat_1
-  Child asks Apprentice to play with her.
+  Cleric asks Apprentice to play with her.
   Apprentice declines, but after a short argument gives him a 'toy' wand.
   It animates small objects.
   ->->
 = beat_2
-  Child asks the Apprentice a few questions about how the wand works.
+  Cleric asks the Apprentice a few questions about how the wand works.
   The Apprentice eagerly explains the wand's function and the meaning of the sigils carved into the wood.
-  The Child watches silently, eyes beaming at the Apprentice.
+  The Cleric watches silently, eyes beaming at the Apprentice.
   ->->
 = beat_3
-  The Child is in his room.
+  The Cleric is in his room.
   The door is locked, and inside you can hear a faint humming.
 ->->
 -> DONE
@@ -128,23 +144,21 @@ Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism
 '-' indicates low scorer
 =====
 Apprentice: O- C+ E- A- N+
-Farmer: O- C- E+ A+ N-
+Hunter: O- C- E+ A+ N-
 MERCHANT: O+ C+ E+ A- N+
-Child: O+ C+ E- A+ N-
+Cleric: O+ C+ E- A+ N-
 Witch:
 Familiar:
 
-WINTER JAM ENTRY PLOT:
-Witch has been sick for a while. Apprentice is caring for her.
+WINTER JAM ENTRY PLOT:120
+..Witch has been sick for a while. Apprentice is caring for her.
 The Witch's health takes a turn for the worse. The Apprentice becomes desperate.
 She finds an old formula for a cure-all ritual that may help the Witch.
 Over the course of the game, the Apprentice gathers ingredients.
     TODO: Create needed ingredients based on possible cast choices?
-    - Hunter as a guide for some forest ingredient
+    - Hunter as a guide to get an important part from a strong creature 
     - Merchant to special-order some exotic ingredient
-    - Child (parents paying for magic tutoring? could be the current source of income)
-    - Blacksmith to forge some medium
-    - Demon to find some alien ingredient
+    - Altar Boy(?) for some consecrated ingredient
 On the final night, the Apprentice attempts the ritual.
 The ritual attracts unwanted attention. It succeeds; but the Witch disappears
 --- below would be done in a sequel
