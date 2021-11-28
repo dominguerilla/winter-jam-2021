@@ -1,9 +1,11 @@
 TODO: This is a draft of a plot outline for this story.
--> RITUAL
+-> HUNTER_QUEST.beat_1 ->
 
 VAR APPRENTICE_NAME="Alice"
 VAR WITCH_NAME="Rochelle"
 VAR TOWN_NAME="[TOWN NAME]"
+VAR FOREST_BOSS="deer with black antlers"
+VAR HUNTER_NAME="HUNTER"
 
 VAR INGREDIENT_1="Manastone"
 VAR INGREDIENT_2="Ritual Medium"
@@ -76,25 +78,15 @@ You {~brew a tea|mix an ointment} for the Witch and begin the mid's chores.
 == HUNTER_QUEST ==
 = beat_1
 TODO: Apprentice goes to forest by herself, gets into trouble, runs into the Hunter
-[The Hunter has found that something has eaten her stored crop. Without this produce, she will (starve? go broke?)]
-[Hunter accompanies you to the demon world to forage, you find some food]
-[They run into demon thugs, who are bullying lesser demons]
-[The Apprentice turns away, thinking it not worth her time. The Hunter gets angry, kicks ass, the demons flee]
-[Grateful, the lesser demons lead the Apprentice and Hunter to a well-hidden orchard filled with ripe fruits and vegetables]
-[The lesser demons warn away from a certain fruit, which the Apprentice recognizes as being very valuable. She does not heed their warnings]
-[The Apprentice and the Hunter go back home laden with food.]
-[The Apprentice keeps the fruit. She may be able to sell it.]
+{APPRENTICE_NAME} enters the forest (with a tip about last known location of {INGREDIENT_1}--and runs into {HUNTER_NAME}, who is stalking the {FOREST_BOSS}. Hearing {APPRENTICE_NAME} approach, it runs away into the woods.
+{APPRENTICE_NAME} and {HUNTER_NAME} track the {FOREST_BOSS} deeper into the forest.
+The party finds a burrow with signs of turmoil outside. They find the {INGREDIENT_1} in a pool of blood, along with a piece of the deer. Cries of pain can be heard inside the burrow.
+* [Investigate the burrow]
+    The {FOREST_BOSS} is gravely wounded and is slowly dying.
+* [Leave immediately]
+- Worse monster returns
 ->->
 
-= beat_2
-The Hunter says that she has found strange tracks on the outskirts of the village.
-She warns the Apprentice to be careful walking through the woods.
-->->
-
-= epilogue
-The Hunter wonders who raided her larder the first time.
-The Familiar burps up a piece of corn, which the Hunter recognizes.
-->->
 
 == MERCHANT_QUEST ==
 
