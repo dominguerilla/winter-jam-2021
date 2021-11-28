@@ -49,26 +49,7 @@ You speak with the Witch, updating her on the mid and taking care of her.
 
 = start 
 You {~brew a tea|mix an ointment} for the Witch and begin the mid's chores.
--> mid
 
-= mid
-There {are|is} {two people|one person|no one else} asking for help.
-
-* [Listen to Hunter, who is at the front door]
-  -> HUNTER_QUEST.beat_2 -> DAY_2.mid
-* [Sell the fruit to the Merchant]
-  -> MERCHANT_QUEST.beat_2 -> DAY_2.mid
-* [Listen to Cleric]
-  -> CLERIC_QUEST.beat_2 -> DAY_2.mid
-* -> 
-  It is time to head home. -> DAY_2.end
--> DONE
-
-= end
-You return to the hut. 
-You speak with the Witch, updating her on the mid and taking care of her. 
-The night ends, and another mid begins.
-You {~brew a tea|mix an ointment} for the Witch and begin the mid's chores.
 -> DAY_3
 
 == DAY_3 ==
