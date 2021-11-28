@@ -59,13 +59,22 @@ You {~brew a tea|mix an ointment} for the Witch and begin the mid's chores.
 == HUNTER_QUEST ==
 = beat_1
 TODO: Apprentice goes to forest by herself, gets into trouble, runs into the Hunter
+# Possible discussion topics: the difference between magic and non-magic creatures
+[{APPRENTICE_NAME} discovers that the {FOREST_BOSS} has a {INGREDIENT_1}]
 {APPRENTICE_NAME} enters the forest (with a tip about last known location of {INGREDIENT_1}--and runs into {HUNTER_NAME}, who is stalking the {FOREST_BOSS}. Hearing {APPRENTICE_NAME} approach, it runs away into the woods.
-{APPRENTICE_NAME} and {HUNTER_NAME} track the {FOREST_BOSS} deeper into the forest.
-The party finds a burrow with signs of turmoil outside. They find the {INGREDIENT_1} in a pool of blood, along with a piece of the deer. Cries of pain can be heard inside the burrow.
-* [Investigate the burrow]
-    The {FOREST_BOSS} is gravely wounded and is slowly dying.
-* [Leave immediately]
-- Worse monster returns
+{APPRENTICE_NAME} and {HUNTER_NAME} track the {FOREST_BOSS} deeper into the forest. It eludes and confounds them, luring them deeper and deeper, and day turns into night in the forest.
+They lose sight of the {FOREST_BOSS}, but are able to track its movements. The party finds a burrow with signs of turmoil outside. They find the {INGREDIENT_1} in a pool of blood (which {APPRENTICE_NAME} takes), along with a piece of the {FOREST_BOSS}. Cries of pain can be heard inside the burrow.
+Inside the burrow, the {FOREST_BOSS} is gravely wounded and lays dying.
+
+* (healed_forest_boss)[Heal the {FOREST_BOSS}]
+    The {FOREST_BOSS} escapes from the burrow, grateful.
+* (killed_forest_boss)[Put it out of its misery]
+    The {FOREST_BOSS} is dead.
+* (left_forest_boss)[Leave immediately]
+- {not left_forest_boss: The monster that wounded the {FOREST_BOSS} returns.}
+- {APPRENTICE_NAME} and {HUNTER_NAME} leave quickly.
+    
+
 ->->
 
 
