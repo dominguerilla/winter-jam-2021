@@ -9,28 +9,48 @@ VAR MONSTER="bear"
 VAR HUNTER_NAME="HUNTER"
 VAR PHYLACTERY="jeweled skull"
 
-VAR INGREDIENT_1="mana crystal"
+VAR INGREDIENT="sage mushroom"
 
+VAR HAS_PIPE=false
+TODO: What is the Lich like? History?
+TODO: Describe the cottage and the surrounding clearing
 == INTRO ==
-TODO: Apprentice and Hunter track down forest boss, find it in a ruined temple, find the Lich's phylactery, bring it back to help the Witch
-The witch {WITCH_NAME} has fallen sick.
-Her apprentice {APPRENTICE_NAME} decides to find her some relief.
-{APPRENTICE_NAME} finds a recipe for a cure-all concoction; said to invigorate and revitalize the drinker.
-It requires a {INGREDIENT_1}, which are found on the {FAMILIAR} that reside in the forest.
--> HUNTER_QUEST.start
+In crisp winter air, through the stout gray chimney of a cottage buried in a blanket of snow, a cough rings out.
+"Madame--you're burning up!" says {APPRENTICE_NAME}, her hand pressed onto the witch's forehead.
+"It's nothing serious, darling." Madame {WITCH_NAME} soothes. She takes {APPRENTICE_NAME}'s hand from her brow and gently presses a folded slip into her student's palm.
+{APPRENTICE_NAME} unfolds the paper. A list of herbs, vegetables, reagents, and instructions is scrawled in a neat and tiny print.
+"A little tonic to ease my fever," she explains. "We have everything in the pantry except for {INGREDIENT}."
+{APPRENTICE_NAME} beams. "Leave it to me!"
+Collecting her small brown satchel, her dark oaken staff, and a flask of freshly brewed peppermint tea, {APPRENTICE_NAME} stands in the foyer dressed in her hat and robes.
+* (stopped_witch_from_smoking)[Say goodbye to Madame {WITCH_NAME}]
+    "I'm off, Madame," {APPRENTICE_NAME} chirps. She pokes her head through the maroon curtains into {WITCH_NAME}'s study.
+    "Come home before sunset," calls Madame {WITCH_NAME}. She held a long briar pipe and a flaming wick.
+    Under a withering glare from her apprentice, she sighs--extinguishing the light and returning the pipe to its ebony case.
+* [Venture outside to the forest]
+    
+- A white flurry swirls above the towering pines and descend onto the witch's garden, laid to rest by the winter frost.
+From the yard's low iron gate, {APPRENTICE_NAME} waves to Madame {WITCH_NAME} through the window of her study.
+The witch waves back, {stopped_witch_from_smoking: gingerly holding a cup of fresh peppermint tea. | holding a long briar pipe in her pursed lips. -> short_argument ->}
+-> END
 
-== HUNTER_QUEST ==
+= short_argument
+
+After stomping back into the cottage, {APPRENTICE_NAME} re-emerges from the door, victorious. 
+Inside, Madame {WITCH_NAME} tenderly blows at a steaming porcelain teacup, her pipe replaced with a draught of fresh peppermint tea.
+->->
+
+== FOREST ==
 = start
-{APPRENTICE_NAME} enters the forest (with a tip about last known location of {INGREDIENT_1}) and spots the {FAMILIAR} immediately. Hearing {APPRENTICE_NAME} approach, it runs away into the woods.
+{APPRENTICE_NAME} enters the forest (with a tip about last known location of {INGREDIENT}) and spots the {FAMILIAR} immediately. Hearing {APPRENTICE_NAME} approach, it runs away into the woods.
 {APPRENTICE_NAME} follows its trail.
 -> beat_1
 
 = beat_1
 She finds an old temple, hidden in the depths of the forest.
-{not got_ing_1: The {INGREDIENT_1} is on the ground, covered in blood.}
+{not got_ing_1: The {INGREDIENT} is on the ground, covered in blood.}
 A faint crying can be heard from inside the temple.
-* (got_ing_1)[Grab the {INGREDIENT_1}]
-    You grab the {INGREDIENT_1} and place it in your satchel.
+* (got_ing_1)[Grab the {INGREDIENT}]
+    You grab the {INGREDIENT} and place it in your satchel.
     -> beat_1
 * [Enter the temple]
 - {APPRENTICE_NAME} enters the temple. 
@@ -76,7 +96,7 @@ Using her newfound power, {APPRENTICE_NAME} {prepare_traps: escapes from|defeats
 -> beat_4
 
 = beat_4
-{APPRENTICE_NAME} returns with the {INGREDIENT_1}, the Lich, and the {FAMILIAR} to a very confused witch.
+{APPRENTICE_NAME} returns with the {INGREDIENT}, the Lich, and the {FAMILIAR} to a very confused witch.
 
 TODO: What is the monster? Something inherently evil? Animal corrupted by mana?
 # What choices can be made?
