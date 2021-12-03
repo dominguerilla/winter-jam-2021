@@ -9,12 +9,13 @@ VAR MONSTER="bear"
 VAR HUNTER_NAME="HUNTER"
 VAR PHYLACTERY="jeweled skull"
 
-VAR INGREDIENT="sage mushroom"
+VAR INGREDIENT="pond-shroom"
 
 VAR HAS_PIPE=false
 TODO: What is the Lich like? History?
 TODO: Describe the cottage and the surrounding clearing
 == INTRO ==
+# CHAPTER 1
 In crisp winter air, through the stout gray chimney of a cottage buried in a blanket of snow, a cough rings out.
 "Madame--you're burning up!" says {APPRENTICE_NAME}, her hand pressed onto the witch's forehead.
 "It's nothing serious, darling." Madame {WITCH_NAME} soothes. She takes {APPRENTICE_NAME}'s hand from her brow and gently presses a folded slip into her student's palm.
@@ -23,15 +24,15 @@ In crisp winter air, through the stout gray chimney of a cottage buried in a bla
 {APPRENTICE_NAME} beams. "Leave it to me!"
 Collecting her small brown satchel, her dark oaken staff, and a flask of freshly brewed peppermint tea, {APPRENTICE_NAME} stands in the foyer dressed in her hat and robes.
 * (stopped_witch_from_smoking)[Say goodbye to Madame {WITCH_NAME}]
-    "I'm off, Madame," {APPRENTICE_NAME} chirps. She pokes her head through the maroon curtains into {WITCH_NAME}'s study.
+    {APPRENTICE_NAME} pokes her head through the maroon curtains into {WITCH_NAME}'s study. "I'm off, Madame," she chirps. 
     "Come home before sunset," calls Madame {WITCH_NAME}. She held a long briar pipe and a flaming wick.
     Under a withering glare from her apprentice, she sighs--extinguishing the light and returning the pipe to its ebony case.
 * [Venture outside to the forest]
     
-- A white flurry swirls above the towering pines and descend onto the witch's garden, laid to rest by the winter frost.
+- A white flurry swirls above the towering pines and descends onto the witch's garden, laid to rest by the winter frost.
 From the yard's low iron gate, {APPRENTICE_NAME} waves to Madame {WITCH_NAME} through the window of her study.
 The witch waves back, {stopped_witch_from_smoking: gingerly holding a cup of fresh peppermint tea. | holding a long briar pipe in her pursed lips. -> short_argument ->}
--> END
+-> FOREST
 
 = short_argument
 
@@ -40,7 +41,52 @@ Inside, Madame {WITCH_NAME} tenderly blows at a steaming porcelain teacup, her p
 ->->
 
 == FOREST ==
-= start
+# CHAPTER 2
+{APPRENTICE_NAME} comes to a halt. To the west, the trail continued--past the pine groves and over the shallow creek.
+With a shiver, {APPRENTICE_NAME} clutches her cloak tightly.
+The plush fur lining guarded her from the winter's breath, not its bite.
+
+-> cast_warmth_magic ->
+
+She loosens her cloak and begins to walk.
+
+-> LAKE
+
+= cast_warmth_magic
+She rummages through her satchel. Under her flask, behind a bundle of sage-grass, and next to a green glass jar filled with sparkling rocks, she grabs a tattered leather notebook.
+Thumbing through its vellum leaves, {APPRENTICE_NAME} turns to a page with a sigil encircled in red ink.
+She holds her hand in front of her face. Her soft whispers float to the page--and a crimson flame ignites above the sigil.
+
+* [Hold the flame]
+    {APPRENTICE_NAME} gently cups the flame in her hand.
+    The page is blank, and she returns the notebook to her satchel. 
+    "That's lovely." she sighs.
+* [Eat the flame]
+    {APPRENTICE_NAME} inhales deeply. Lunging forward, she gouges the flame from the book with her teeth and swallows quickly.
+    Her howls tear through the wood, shaking snow off a nearby pine.
+    Her eyes smolder--her breath, ash.
+    "There *has* to be a better way to do this," she gasps.
+    {APPRENTICE_NAME} brushes soot off her hands and face. A scarlet flame flickers from the tip of her hat.
+* [Shut the flame in the book]
+    {APPRENTICE_NAME} shuts the notebook quickly.
+    A pulse of sunlight shines from its core, and the forest around her basks in a gentle golden aura.
+
+- 
+->->
+
+== LAKE ==
+TODO: Apprentice finds {INGREDIENT_1}
+
+
+TODO: Apprentice sees monster
+TODO: Apprentice follows monster/chased by monster to the temple
+-> END
+TODO: What is the monster? Something inherently evil? Animal corrupted by mana?
+/*
+* Some kind of pack of evil, magic beasts; Apprentice can defeat one, but more appear.
+*/
+
+
 {APPRENTICE_NAME} enters the forest (with a tip about last known location of {INGREDIENT}) and spots the {FAMILIAR} immediately. Hearing {APPRENTICE_NAME} approach, it runs away into the woods.
 {APPRENTICE_NAME} follows its trail.
 -> beat_1
@@ -65,6 +111,8 @@ On her right, she sees a trail of blood leading to a different hallway. Slow, he
 - -> beat_2
 
 = beat_2
+TODO: The Familiar is raised before/after the Lich is 'bonded' to the Apprentice
+TODO: The Lich can be 'bonded' to the Apprentice's book/staff/mask/hat 
 Within the temple's inner sanctum, the {FAMILIAR} is gravely wounded and lays dying. It lies in front of a strange {PHYLACTERY}. 
 The {PHYLACTERY} speaks. It commands {APPRENTICE_NAME} to kneel before it, and to free it from its prison.
 {found_monster: Outside, the {MONSTER} pounds on the door.}
@@ -91,6 +139,7 @@ It requires a blood sacrifice.
 - -> beat_3
 
 = beat_3
+
 The {MONSTER} enters the sanctum.
 Using her newfound power, {APPRENTICE_NAME} {prepare_traps: escapes from|defeats} the {MONSTER}.
 -> beat_4
@@ -98,7 +147,6 @@ Using her newfound power, {APPRENTICE_NAME} {prepare_traps: escapes from|defeats
 = beat_4
 {APPRENTICE_NAME} returns with the {INGREDIENT}, the Lich, and the {FAMILIAR} to a very confused witch.
 
-TODO: What is the monster? Something inherently evil? Animal corrupted by mana?
 # What choices can be made?
 # What powers can be given (crystal, necromancy, smoke)?
 # Whether or not to investigate the temple?
