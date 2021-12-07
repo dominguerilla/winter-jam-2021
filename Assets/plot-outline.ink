@@ -104,21 +104,23 @@ She holds her hand in front of her face. Her soft whispers float to the page--an
 
 == CREEK ==
 TODO: Apprentice finds {INGREDIENT_1}
-As she crested the hill, {APPRENTICE_NAME} saw the stream below. 
-Its gently babbling waters flowed from the south, and it bent and snaked around a huddle of trees to the east.
-
+{APPRENTICE_NAME}'s gaze falls from the cloud-tipped maple trees to the clearing as she crests the hill.
+A brook babbled softly from the south. It snaked out of view around the trees to the east.
 
 -> END
 TODO: Apprentice meets the stranger
+/*
+Lying on the ground?
+*/
+TODO: Apprentice walks stranger to the hut
 
-TODO: Apprentice walks with stranger to the hut
-
-TODO: When Alice returns to hut, the stranger attacks
-
+TODO: When Alice returns to hut, the stranger and the witch fight?
 
 /*
 COLOR SCHEMES:
 https://coolors.co/f7f7f2-e4e6c3-899878-222725-121113
 https://coolors.co/2274a5-e7dfc6-e9f1f7-131b23-816c61
 https://coolors.co/e0fbfc-c2dfe3-9db4c0-5c6b73-253237
+
+WHAT FLAVOR ARE YOUR BONES ? ?
 */
