@@ -53,7 +53,7 @@ Collecting her small brown satchel, her dark oaken staff, and a flask of freshly
     
 - A white flurry swirls above the towering pines and descends onto the witch's garden, laid to rest by the winter frost.
 From the yard's low iron gate, {APPRENTICE_NAME} waves to Madame {WITCH_NAME} through the window of her study.
-The witch waves back, {stopped_witch_from_smoking: gingerly holding a cup of fresh peppermint tea. | holding a long briar pipe in her pursed lips. -> short_argument ->}
+The witch waves back, {stopped_witch_from_smoking: gingerly holding a cup of fresh peppermint tea. | smoking a long briar pipe. -> short_argument ->}
 
 * [Continue to the forest]
 # CLEAR
