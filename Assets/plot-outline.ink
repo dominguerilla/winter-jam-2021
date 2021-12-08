@@ -1,4 +1,5 @@
-TODO: This is a draft of a plot outline for this story.
+
+-> INTRO
 /*
 WINTER JAM ENTRY PLOT:
 Apprentice goes to forest to take care of errands
@@ -27,8 +28,6 @@ Apprentice raises the Witch + stranger, begins her journey
     - save the witch?
     - revenge?
 */
-
--> INTRO
 
 VAR APPRENTICE_NAME="Alice"
 VAR WITCH_NAME="Rochelle"

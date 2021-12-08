@@ -785,7 +785,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     Android: USE_NEW_INPUT
-    Standalone: ODIN_INSPECTOR;ODIN_INSPECTOR_3;USE_NEW_INPUT
+    Standalone: ODIN_INSPECTOR;ODIN_INSPECTOR_3;USE_NEW_INPUT;INK_FULLPATHS
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
