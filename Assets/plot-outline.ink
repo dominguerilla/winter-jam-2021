@@ -2,36 +2,17 @@
 -> INTRO
 /*
 WINTER JAM ENTRY PLOT:
-Apprentice goes to forest to take care of errands
-She sees something strange
-    * a stranger asking for help
-    - abandoned campsite, trail leading to hut?
-    - a figure in the water?
-    - a mysterious crystal in the creek?
-Returning to her hut, something is wrong
-    * the stranger suddenly attacks the witch, KO'ing the Apprentice in the process
-    - the witch is missing
-        - signs of an attack?
-        - the secret entrance to some unknown room, now unveiled?
-        - a chest that was always locked, now ajar?
-    - the witch is there, but there is an attack
-        - apprentice is shoved into some hidden panic room?
-        - cultists?
-        - inquisitors?
-She finds the Witch + stranger dead, and a mysterious artifact
-    - a jeweled skull that talks
-    - a box wrapped in chains/talismans
-Witch is wounded/defeated; Apprentice makes a deal?
-    - bonds to the entity
-    - spawns a familiar
-Apprentice raises the Witch + stranger, begins her journey
-    - save the witch?
-    - revenge?
+The sickly Witch is preparing a big dinner, and the Apprentice is tasked to help with some chores
+In any order:
+    - The Apprentice brews potions/coffee
+    - The Apprentice does some laundry
+    - The Apprentice gathers a needed ingredient
+When the Apprentice finishes, they have dinner together--the Witch, the Apprentice, and a corpse
+After the dinner is finished, the Witch has a new body, and her old one dissolves into ash
 */
 
 VAR APPRENTICE_NAME="Alice"
 VAR WITCH_NAME="Rochelle"
-VAR PHYLACTERY="jeweled skull"
 
 VAR INGREDIENT="pond-shroom"
 
@@ -39,12 +20,23 @@ TODO: Describe the cottage and the surrounding clearing
 == INTRO ==
 # CHAPTER 1
 In crisp winter air, through the stout gray chimney of a cottage in a blanket of snow, a cough rings out.
-"Madame--you're burning up!" says {APPRENTICE_NAME}, her hand pressed onto the witch's forehead.
-"It's nothing serious, darling." Madame {WITCH_NAME} soothes. She takes {APPRENTICE_NAME}'s hand from her brow and gently presses a folded slip into her student's palm.
+"Madame--you're burning up!" says {APPRENTICE_NAME}, her hand pressed onto the woman's forehead.
+"I'll be okay, darling." Madame {WITCH_NAME} soothes. She takes her student's hand from her brow and--with her help--sits up in the bed.
+Silver daylight shines through the window, settling on a black timepiece perched on a stack of books.
+"I didn't realize I slept in so late," she sighed, rising. "There's a lot of work that needs to be done for dinner tonight."
+"Will you be okay, Madame?"
+The lady coughs, and she squeezes {APPRENTICE_NAME}'s hand. "With the help of the world's best apprentice, what do I have to fear?"
+{APPRENTICE_NAME} beams. "Leave it to me!"
+TODO: List the chores
+* [Continue to the forest]
+# CLEAR
+-> FOREST
+->->
+
+== GATHER_CHORE ==
 {APPRENTICE_NAME} unfolds the paper. A list of herbs, vegetables, reagents, and instructions is scrawled in a neat and tiny print.
 "A little tonic to ease my fever," she explains. "We have everything in the pantry except for {INGREDIENT}."
-{APPRENTICE_NAME} beams. "Leave it to me!"
-Collecting her small brown satchel, her dark oaken staff, and a flask of freshly brewed peppermint tea, {APPRENTICE_NAME} stands in the foyer dressed in her hat and robes.
+Collecting her small brown satchel, her dark oaken staff, and a hot flask of peppermint tea, {APPRENTICE_NAME} stands in the foyer dressed in her hat and robes.
 * (stopped_witch_from_smoking)[Say goodbye to Madame {WITCH_NAME}]
     {APPRENTICE_NAME} pokes her head through the maroon curtains into {WITCH_NAME}'s study. "I'm off, Madame," she chirps. 
     "Come home before sunset," calls Madame {WITCH_NAME}. She held a long briar pipe and a flaming wick.
@@ -53,14 +45,10 @@ Collecting her small brown satchel, her dark oaken staff, and a flask of freshly
     
 - A white flurry swirls above the towering pines and descends onto the witch's garden, laid to rest by the winter frost.
 From the yard's low iron gate, {APPRENTICE_NAME} waves to Madame {WITCH_NAME} through the window of her study.
-The witch waves back, {stopped_witch_from_smoking: gingerly holding a cup of fresh peppermint tea. | smoking a long briar pipe. -> short_argument ->}
-
-* [Continue to the forest]
-# CLEAR
--> FOREST
+The witch waves back, {stopped_witch_from_smoking: gingerly holding a cup of peppermint tea. | smoking a long briar pipe. -> short_argument ->}
+->->
 
 = short_argument
-
 After stomping back into the cottage, {APPRENTICE_NAME} re-emerges from the door, victorious. 
 Inside, Madame {WITCH_NAME} tenderly blows at a steaming porcelain teacup, her pipe replaced with a draught of fresh peppermint tea.
 ->->
@@ -106,6 +94,7 @@ TODO: Apprentice finds {INGREDIENT_1}
 {APPRENTICE_NAME}'s gaze falls from the cloud-tipped maple trees to the clearing as she crests the hill.
 A brook babbled softly from the south. It snaked out of view around the trees to the east.
 
+
 -> END
 TODO: Apprentice meets the stranger
 /*
@@ -113,7 +102,10 @@ Lying on the ground?
 */
 TODO: Apprentice walks stranger to the hut
 
-TODO: When Alice returns to hut, the stranger and the witch fight?
+== HUT_RETURN ==
+TODO: When Alice returns to hut, the stranger and the witch fight
+
+-> END
 
 /*
 COLOR SCHEMES:
