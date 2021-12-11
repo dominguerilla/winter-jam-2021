@@ -2,11 +2,11 @@
 -> INTRO
 /*
 WINTER JAM ENTRY PLOT:
-The sickly Witch is preparing a big dinner, and the Apprentice is tasked to help with some chores
-In any order:
-    - The Apprentice brews potions/coffee
-    - The Apprentice does some laundry
-    - The Apprentice gathers a needed ingredient
+On the night of the winter solstice, the Witch and her Apprentice are preparing for a big dinner
+    - rekindle the fire
+    - Make some coffee/tea/snacks
+    - Mise en place
+    - Cook! Pick a recipe
 When the Apprentice finishes, they have dinner together--the Witch, the Apprentice, and a corpse
 After the dinner is finished, the Witch has a new body, and her old one dissolves into ash
 */
@@ -16,19 +16,27 @@ VAR WITCH_NAME="Rochelle"
 
 VAR INGREDIENT="pond-shroom"
 
-TODO: Describe the cottage and the surrounding clearing
 == INTRO ==
 # CHAPTER 1
-In crisp winter air, through the stout gray chimney of a cottage in a blanket of snow, a cough rings out.
-"Madame--you're burning up!" says {APPRENTICE_NAME}, her hand pressed onto the woman's forehead.
-"I'll be okay, darling." Madame {WITCH_NAME} soothes. She takes her student's hand from her brow and--with her help--sits up in the bed.
-Silver daylight shines through the window, settling on a black timepiece perched on a stack of books.
+In the heart of an evergreen grove, a stout cottage twinkles under a blanket of starlight.
+The snow snuggles the cedar walls, bathed in a warm glow. Behind frosted panes, a girl presses her hand onto a woman's forehead.
+"Madame--you're burning up!" says {APPRENTICE_NAME}.
+"I'll be okay, darling." Madame {WITCH_NAME} soothes. 
+She takes her student's hand from her brow. [{APPRENTICE_NAME} helps her sit up in the bed.]
+TODO: light settling on a black timepiece perched on a stack of books.
 "I didn't realize I slept in so late," she sighed, rising. "There's a lot of work that needs to be done for dinner tonight."
 "Will you be okay, Madame?"
 The lady coughs, and she squeezes {APPRENTICE_NAME}'s hand. "With the help of the world's best apprentice, what do I have to fear?"
 {APPRENTICE_NAME} beams. "Leave it to me!"
+-> brew_drink ->
 TODO: List the chores
 * [Continue to the forest]
+-> FOREST
+
+= brew_drink 
+
+->->
+
 # CLEAR
 -> FOREST
 ->->
