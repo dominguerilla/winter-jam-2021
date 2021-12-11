@@ -19,8 +19,8 @@ VAR INGREDIENT="pond-shroom"
 == INTRO ==
 # CHAPTER 1
 Perched on the cliffs of a rocky coast, a grove of cypress and pine watches over the northwest sea. 
-Moonlight trickles through its white tipped tree tops, glimmering on the roof of a stout cottage. 
-The snow that snuggles its cedar walls are bathed in the ochre glow of the window. Behind the frosted panes, a girl presses her hand onto a woman's forehead.
+Moonlight trickles through its white tipped tree tops, glimmering from the roof of a stout cottage within. 
+The snow that snuggles its cedar walls are bathed in the ochre glow of the windows. Behind the frosted panes, a girl presses her hand onto a woman's forehead.
 "Madame--you're burning up!" says {APPRENTICE_NAME}.
 "I'll be okay, darling." Madame {WITCH_NAME} soothes. 
 She takes her student's hand from her brow. [{APPRENTICE_NAME} helps her sit up in the bed.]
