@@ -19,20 +19,19 @@ VAR INGREDIENT="pond-shroom"
 == INTRO ==
 # CHAPTER 1
 Perched on the cliffs of a rocky coast, a grove of cypress and pine watches over the northwest sea. 
-Moonlight trickles through its white tipped tree tops, glimmering from the roof of a stout cottage within. 
-The snow that snuggles its cedar walls are bathed in the ochre glow of the windows. Behind the frosted panes, a girl presses her hand onto a woman's forehead.
+Moonlight trickles through its white tipped tree tops, twinkling from the icy roof of a stout cottage within. 
+The snow that buries the foot of its cedar walls is bathed in an ochre glow. Behind frosty glass, a young girl is hunched over a woman entombed in a pile of knit orange pillows.
 "Madame--you're burning up!" says {APPRENTICE_NAME}.
 "I'll be okay, darling." Madame {WITCH_NAME} soothes. 
-She takes her student's hand from her brow. [{APPRENTICE_NAME} helps her sit up in the bed.]
-TODO: light settling on a black timepiece perched on a stack of books.
-"I didn't realize I slept in so late," she sighed, rising. "There's a lot of work that needs to be done for dinner tonight."
-"Will you be okay, Madame?"
-The lady coughs, and she squeezes {APPRENTICE_NAME}'s hand. "With the help of the world's best apprentice, what do I have to fear?"
+She takes her student's hand from her brow, and {APPRENTICE_NAME} holds her tightly as she sits up.
+Her gaze falls to a black timepiece on a stack of worn books to her left. With a frown, she takes it and gently settles it into the inner pocket of her robes. 
+"There's a lot of work that needs to be done for dinner tonight," she sighed, rising to her feet.
+{APPRENTICE_NAME} bites her lip. "Maybe you should take it easy. I don't want you to collapse again."
+Madame {WITCH_NAME} stifles a cough. "Our solstice dinner only comes once a year," she replied. "I wouldn't miss it for the world."
+"And besides," she squeezes {APPRENTICE_NAME}'s hand. "With you around, what do I have to fear?"
 {APPRENTICE_NAME} beams. "Leave it to me!"
 -> brew_drink ->
-TODO: List the chores
-* [Continue to the forest]
--> FOREST
+-> END
 
 = brew_drink 
 
