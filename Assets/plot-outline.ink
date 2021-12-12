@@ -24,10 +24,10 @@ The snow that buries the foot of its cedar walls is bathed in an ochre glow. Beh
 "Madame--you're burning up!" says {APPRENTICE_NAME}.
 "I'll be okay, darling." Madame {WITCH_NAME} soothes. 
 She takes her student's hand from her brow, and {APPRENTICE_NAME} holds her tightly as she sits up.
-Her gaze falls to a black timepiece on a stack of worn books to her left. With a frown, she takes it and gently settles it into the inner pocket of her robes. 
+    Her gaze falls to a black timepiece on a stack of worn books to her left. She takes it and gently settles it into the inner pocket of her robes. 
 "There's a lot of work that needs to be done for dinner tonight," she sighed, rising to her feet.
 {APPRENTICE_NAME} bites her lip. "Maybe you should take it easy. I don't want you to collapse again."
-Madame {WITCH_NAME} stifles a cough. "Our solstice dinner only comes once a year," she replied. "I wouldn't miss it for the world."
+Madame {WITCH_NAME} stifles a cough. "The winter solstice only comes once a year," she replied. "I wouldn't miss it for the world."
 "And besides," she squeezes {APPRENTICE_NAME}'s hand. "With you around, what do I have to fear?"
 {APPRENTICE_NAME} beams. "Leave it to me!"
 -> brew_drink ->
