@@ -20,21 +20,26 @@ VAR INGREDIENT="pond-shroom"
 # CHAPTER 1
 Perched on the cliffs of a rocky coast, a grove of cypress and pine watches over the northwest sea. 
 Moonlight trickles through its white tipped tree tops, twinkling from the icy roof of a stout cottage within. 
-The snow that buries the foot of its cedar walls is bathed in an ochre glow. Behind frosty glass, a young girl is hunched over a woman entombed in a pile of knit orange pillows.
+The snow that buries the foot of its cedar walls is bathed in an ochre glow. Behind frosty glass, a young girl holds a flickering light over a woman entombed in a pile of knit orange pillows.
 "Madame--you're burning up!" says {APPRENTICE_NAME}.
 "I'll be okay, darling." Madame {WITCH_NAME} soothes. 
 She takes her student's hand from her brow, and {APPRENTICE_NAME} holds her tightly as she sits up.
-    Her gaze falls to a black timepiece on a stack of worn books to her left. She takes it and gently settles it into the inner pocket of her robes. 
+Her gaze falls to a black timepiece on a stack of worn books to her left. She takes it and gently settles it into the inner pocket of her robes. 
 "There's a lot of work that needs to be done for dinner tonight," she sighed, rising to her feet.
 {APPRENTICE_NAME} bites her lip. "Maybe you should take it easy. I don't want you to collapse again."
 Madame {WITCH_NAME} stifles a cough. "The winter solstice only comes once a year," she replied. "I wouldn't miss it for the world."
 "And besides," she squeezes {APPRENTICE_NAME}'s hand. "With you around, what do I have to fear?"
 {APPRENTICE_NAME} beams. "Leave it to me!"
--> brew_drink ->
+-> den.intro ->
 -> END
 
+== den ==
+= intro
+In the den lived a black iron stove. It lurked in the western wall of the of the airy room.
+An olive green sofa, an armchair covered in blankets, and a low wooden table huddle around the hearth's glow. 
+Embers cast smoldering shadows on the room beyond the furniture.
+->->
 = brew_drink 
-
 ->->
 
 # CLEAR
