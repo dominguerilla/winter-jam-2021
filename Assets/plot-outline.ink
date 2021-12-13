@@ -1,5 +1,5 @@
 
--> INTRO
+-> PLOT.intro
 /*
 WINTER JAM ENTRY PLOT:
 On the night of the winter solstice, the Witch and her Apprentice are preparing for a big dinner
@@ -16,7 +16,8 @@ VAR WITCH_NAME="Rochelle"
 
 VAR INGREDIENT="pond-shroom"
 
-== INTRO ==
+== PLOT ==
+= intro
 # CHAPTER 1
 Perched on the cliffs of a rocky coast, a grove of cypress and pine watches over the northwest sea. 
 Moonlight trickles through its white tipped tree tops, twinkling from the icy roof of a stout cottage within. 
@@ -30,16 +31,25 @@ Her gaze falls to a black timepiece on a stack of worn books to her left. She ta
 Madame {WITCH_NAME} stifles a cough. "The winter solstice only comes once a year," she replied. "I wouldn't miss it for the world."
 "And besides," she squeezes {APPRENTICE_NAME}'s hand. "With you around, what do I have to fear?"
 {APPRENTICE_NAME} beams. "Leave it to me!"
--> den.intro ->
+-> Den ->
+-> Den.light_flame ->
+
 -> END
 
-== den ==
-= intro
-In the den lived a black iron stove. It lurked in the western wall of the of the airy room.
+== Den ==
+-> on_enter ->
+->->
+= on_enter
+# CLEAR
+In the den lived a black iron stove. It lurks in the western wall of the airy room.
 An olive green sofa, an armchair covered in blankets, and a low wooden table huddle around the hearth's glow. 
 Embers cast smoldering shadows on the room beyond the furniture.
 ->->
-= brew_drink 
+
+= light_flame
+{APPRENTICE_NAME} crept toward the stove, holding her fires aloft.
+Candleflames ignite as she approaches and die as she recedes.
+TODO: rekindle the stove
 ->->
 
 # CLEAR
