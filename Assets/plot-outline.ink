@@ -83,16 +83,23 @@ She takes a blue pot from the cupboard and uncorks it. It held dried leaves and 
 ->->
 
 = eat_dinner
-// After dinner, Witch recalls the first time the Apprentice saw the Winter Solstice ritual
 [Set the table]
+{APPRENTICE_NAME} cradled a candle as she stepped into the darkness.
+From the depths of the room, a slight rustle could be heard.
+She feels her way to the table and lights a candelabra on its surface.
+Illuminated in a dim light, a man sits across the table.
+Muffled moans escape from the black cloth wrapped around his head.
+The ropes that hold his limbs to his chair strain, but do not give.
+
 [Seat the diners]
 "Please," he whimpered. "I didn't know! I wouldn't have come if I knew--"
 "But you did," the woman hisses. And that was reason enough.
-She thrusts the dagger and tears the life from his body.
-Emerald light and shadow envelop the crumpled form in swirling black ribbons.
-When the dust settles, not a spot of blood remains.
+She thrusts the dagger into his stomach and unleashes a torrent of black smoke.
+Emerald light and shadow flood the room.
+The dust settles, and the two figures that remained return to their seats.
 TODO: The witch looks younger
 [Serve the food, eat]
+// After dinner, Witch recalls the first time the Apprentice saw the Winter Solstice ritual
 "{APPRENTICE_NAME}, I hope you were paying attention," said the lady. "Next winter, I'll be teaching you how to do it yourself."
 -> END
 
