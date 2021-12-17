@@ -11,13 +11,13 @@ On the night of the winter solstice, the Witch and her Apprentice are preparing 
     - rekindle the fire
     - Make some coffee/tea/snacks
     - Cook
-When the Apprentice finishes, they have dinner together--the Witch, the Apprentice, and a corpse
-After the dinner is finished, the Witch has a new body, and her old one dissolves into ash
+When the Apprentice finishes, they have dinner together--the Witch, the Apprentice, and a sacrifice
+After the dinner is finished, the Witch is invigorated
 */
 
 VAR APPRENTICE_NAME="Alice"
 VAR WITCH_NAME="Rochelle"
-
+TODO: Have a phylactery somewhere. Cookbook? The knife? The watch?
 == PLOT ==
 = intro
 # CHAPTER 1
@@ -60,16 +60,18 @@ Dormant candles awaken as she passes by and return to darkness as she recedes.
 At the sound of her footsteps, the stove brightens. Its hatch opens eagerly.
 
 * (fed_stove)[Feed the stove]
-{APPRENTICE_NAME} serves her flame to the stove and closes the hatch.
+{APPRENTICE_NAME} serves her flame and closes the hatch.
 Its fire roars, and she is submerged in a wave of soft light.
 Candles twinkle from every corner of the room.
 ->->
 
 = make_snacks
 // Reminisce on when they made the tea leaves
-{APPRENTICE_NAME} release a flow of cool water from the barrel's spigot. The iron kettle is filled to its brim, and it is placed on the stovetop.
-She withdraws a little blue pot from the cupboard above her and uncorks it with a 'pop'. The fragrance of earth and spice fills the air.
-
+{APPRENTICE_NAME} releases a flow of cool water from the barrel's spigot. The iron kettle is filled to its brim, and it is placed on the stovetop.
+She withdraws a little blue pot from the cupboard above her and uncorks it with a 'pop'. 
+The dried black herbs within fill the air with the fragrance of earth and spice.
+She had helped Madame {WITCH_NAME} pick these leaves last spring.
+They spent the day in the valley
 [Make coffee using mortar and pestle + coffee press]
 [Set plate of cookies, dried fruit, jerky]
 [Take to {WITCH_NAME}]
@@ -91,7 +93,7 @@ The lady smiles. ""
 {APPRENTICE_NAME} cradled a candle as she stepped into the darkness.
 From the depths of the room, a slight rustle could be heard.
 She feels her way to the table and lights the lone candelabra on its surface.
-It shed its dim light on a small cabinet on her left, a stack of wooden barrels on her right, and one figure sitting across the table.
+It shed its dim light on a small cabinet on her left, a stack of wooden barrels on her right, and a figure sitting across the table.
 Muffled moans escape from the black cloth wrapped around his head.
 The ropes that hold his limbs to his chair strain, but do not give.
 {APPRENTICE_NAME} hums. She rummages through the cabinet and pulls out two plates and a handful of silver forks and knives.
@@ -101,12 +103,14 @@ As she arranges them on the table, an enormous enamel pot descends the stairs, f
 "Please," he whimpered. "I didn't know! I wouldn't have come here if I knew--"
 "But you did," the woman hisses. And that was reason enough.
 She thrusts the dagger into his stomach and unleashes a torrent of thick, inky smoke.
-The man is swallowed by emerald light and acrid shadow, drowning in his own gurgling screams.
+The man is swallowed in acrid shadows, drowning in his own gurgling screams.
+A sickening emerald light flows from the dagger. It travels along the length of her arm and inside her open mouth.
+She savors its taste. It was invigorating--intoxicating--and she knew no other flavor that gave her life the way this light did.
 The dust settles on a silent room. The two figures that remained return to their seats.
-TODO: The witch absorbs him + looks younger
+TODO: The witch looks younger
 [Serve the food, eat]
 // After dinner, Witch recalls the first time the Apprentice saw the Winter Solstice ritual
-"{APPRENTICE_NAME}, I hope you were paying attention," said the lady. "Next winter, I'll be teaching you how to do it yourself."
+"{APPRENTICE_NAME}, I hope you were paying attention," said the woman. "Next winter, I'll be teaching you how to do it yourself."
 -> END
 
 /*
