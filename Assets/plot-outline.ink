@@ -32,7 +32,7 @@ Her gaze falls to a black timepiece on a stack of worn books to her left. She ge
 {APPRENTICE_NAME} bites her lip. "Maybe you should take it easy. I don't want you to collapse again."
 Madame {WITCH_NAME} stifles a cough. "The winter solstice only comes once a year," she replied. "I wouldn't miss it for the world."
 "And besides," she squeezes {APPRENTICE_NAME}'s hand. "With you around, what do I have to fear?"
-{APPRENTICE_NAME} beams. "I'll get us something to eat!"
+{APPRENTICE_NAME} beams. "I'll pour us some tea!"
 * [Head toward the den]
 - ->->
 
@@ -68,7 +68,8 @@ Candles twinkle from every corner of the room.
 = make_snacks
 // Reminisce on when they made the tea leaves
 {APPRENTICE_NAME} release a flow of cool water from the barrel's spigot. The iron kettle is filled to its brim, and it is placed on the stovetop.
-She takes a blue pot from the cupboard and uncorks it. It held dried leaves and the fragrance of earth and spice.
+She withdraws a little blue pot from the cupboard above her and uncorks it with a 'pop'. The fragrance of earth and spice fills the air.
+
 [Make coffee using mortar and pestle + coffee press]
 [Set plate of cookies, dried fruit, jerky]
 [Take to {WITCH_NAME}]
@@ -80,24 +81,29 @@ She takes a blue pot from the cupboard and uncorks it. It held dried leaves and 
 [Deglaze fond, saute aromatics]
 [Replace meat, pour in stock, bring to a simmer]
 [Cover]
+...
+"Now remember," she continued. "How long do the mushrooms simmer in the stock?"
+"Between 6 to 12 hours," {APPRENTICE_NAME} recited. "The longer, the better."
+The lady smiles. ""
 ->->
 
 = eat_dinner
-[Set the table]
 {APPRENTICE_NAME} cradled a candle as she stepped into the darkness.
 From the depths of the room, a slight rustle could be heard.
-She feels her way to the table and lights a candelabra on its surface.
-Illuminated in a dim light, a man sits across the table.
+She feels her way to the table and lights the lone candelabra on its surface.
+It shed its dim light on a small cabinet on her left, a stack of wooden barrels on her right, and one figure sitting across the table.
 Muffled moans escape from the black cloth wrapped around his head.
 The ropes that hold his limbs to his chair strain, but do not give.
-
+{APPRENTICE_NAME} hums. She rummages through the cabinet and pulls out two plates and a handful of silver forks and knives.
+As she arranges them on the table, an enormous enamel pot descends the stairs, followed by Madame {WITCH_NAME}.
+...
 [Seat the diners]
-"Please," he whimpered. "I didn't know! I wouldn't have come if I knew--"
+"Please," he whimpered. "I didn't know! I wouldn't have come here if I knew--"
 "But you did," the woman hisses. And that was reason enough.
-She thrusts the dagger into his stomach and unleashes a torrent of black smoke.
-Emerald light and shadow flood the room.
-The dust settles, and the two figures that remained return to their seats.
-TODO: The witch looks younger
+She thrusts the dagger into his stomach and unleashes a torrent of thick, inky smoke.
+The man is swallowed by emerald light and acrid shadow, drowning in his own gurgling screams.
+The dust settles on a silent room. The two figures that remained return to their seats.
+TODO: The witch absorbs him + looks younger
 [Serve the food, eat]
 // After dinner, Witch recalls the first time the Apprentice saw the Winter Solstice ritual
 "{APPRENTICE_NAME}, I hope you were paying attention," said the lady. "Next winter, I'll be teaching you how to do it yourself."
