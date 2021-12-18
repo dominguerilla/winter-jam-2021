@@ -11,7 +11,7 @@ On the night of the winter solstice, the Witch and her Apprentice are preparing 
     - rekindle the fire
     - Make some coffee/tea/snacks
     - Cook
-When the Apprentice finishes, they have dinner together--the Witch, the Apprentice, and a sacrifice
+When the Apprentice finishes, they have dinner together--the Witch, the Apprentice, and an assassin(?)
 After the dinner is finished, the Witch is invigorated
 */
 
@@ -29,7 +29,7 @@ The snow that buries the foot of its cedar walls is bathed in an ochre glow. Beh
 She takes her student's hand from her brow, and {APPRENTICE_NAME} holds her tightly as she sits up.
 Her gaze falls to a black timepiece on a stack of worn books to her left. She gently settles it into the inner pocket of her robes. 
 "There's a lot of work that needs to be done for dinner tonight," she sighed, rising to her feet.
-{APPRENTICE_NAME} bites her lip. "Maybe you should take it easy. I don't want you to collapse again."
+{APPRENTICE_NAME} bites her lip. "Maybe you should take it easy. I don't want you to faint again."
 Madame {WITCH_NAME} stifles a cough. "The winter solstice only comes once a year," she replied. "I wouldn't miss it for the world."
 "And besides," she squeezes {APPRENTICE_NAME}'s hand. "With you around, what do I have to fear?"
 {APPRENTICE_NAME} beams. "I'll pour us some tea!"
@@ -66,12 +66,14 @@ Candles twinkle from every corner of the room.
 ->->
 
 = make_snacks
-// Reminisce on when they made the tea leaves
 {APPRENTICE_NAME} releases a flow of cool water from the barrel's spigot. The iron kettle is filled to its brim, and it is placed on the stovetop.
 She withdraws a little blue pot from the cupboard above her and uncorks it with a 'pop'. 
 The dried black herbs within fill the air with the fragrance of earth and spice.
-She had helped Madame {WITCH_NAME} pick these leaves last spring.
-They spent the day in the valley
+She had picked up this tea a few days ago at the market while shopping for supplies.
+In her absence, some guests had arrived at the cottage. Madame worked herself to the bone to see to their needs.
+{APPRENTICE_NAME} had found her collapsed in the kitchen after they left. 
+"I should've been there," she muttered.
+The kettle's whistle snaps her to attention.
 [Make coffee using mortar and pestle + coffee press]
 [Set plate of cookies, dried fruit, jerky]
 [Take to {WITCH_NAME}]
@@ -95,18 +97,23 @@ From the depths of the room, a slight rustle could be heard.
 She feels her way to the table and lights the lone candelabra on its surface.
 It shed its dim light on a small cabinet on her left, a stack of wooden barrels on her right, and a figure sitting across the table.
 Muffled moans escape from the black cloth wrapped around his head.
-The ropes that hold his limbs to his chair strain, but do not give.
 {APPRENTICE_NAME} hums. She rummages through the cabinet and pulls out two plates and a handful of silver forks and knives.
 As she arranges them on the table, an enormous enamel pot descends the stairs, followed by Madame {WITCH_NAME}.
+The woman sets the pot next to the candelabra. "Oh good. Our guest is awake." 
+The figure writhes at the sound of her voice.
+The ropes that hold his limbs to his chair strain, but give no slack.
+She tears the cloth from his face.
 ...
 [Seat the diners]
-"Please," he whimpered. "I didn't know! I wouldn't have come here if I knew--"
-"But you did," the woman hisses. And that was reason enough.
+//"Please," he whimpered. "I didn't know! I wouldn't have come here if I knew--"
+//"But you did," the woman hisses. And that was reason enough.
+"I'll ask you one last time," she crooned. "How did you find this place?"
+"Fuck you," he spat. "The order is coming. They're not going to let a monster like you live--"
 She thrusts the dagger into his stomach and unleashes a torrent of thick, inky smoke.
 The man is swallowed in acrid shadows, drowning in his own gurgling screams.
 A sickening emerald light flows from the dagger. It travels along the length of her arm and inside her open mouth.
 She savors its taste. It was invigorating--intoxicating--and she knew no other flavor that gave her life the way this light did.
-The dust settles on a silent room. The two figures that remained return to their seats.
+The dust settles on a silent room. 
 TODO: The witch looks younger
 [Serve the food, eat]
 // After dinner, Witch recalls the first time the Apprentice saw the Winter Solstice ritual
