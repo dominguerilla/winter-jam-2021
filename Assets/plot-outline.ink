@@ -2,15 +2,15 @@
 TODO: Figure out why all the choices are appearing at the beginning
 -> PLOT.intro ->
 * [Head toward the den]
--> Den ->
+- -> Den ->
 * [Approach the stove]
--> Den.light_flame ->
+- -> Den.light_flame ->
 * [Make snacks]
--> Den.make_snacks ->
+- -> Den.make_snacks ->
 * [Start cooking]
--> Den.cook_dinner ->
+- -> Den.cook_dinner ->
 * [Eat dinner]
--> Den.eat_dinner ->
+- -> Den.eat_dinner ->
 -> END
 /*
 The 'mysteries' I want to hint at in the story:
@@ -19,19 +19,19 @@ The 'mysteries' I want to hint at in the story:
     M2. What happened a few days ago?
         - The cottage was attacked by inquisitors trying to slay the Witch.
     M3. What is happening at dinner tonight?
-        - Demons are coming over to share a meal.
+        - Demons are coming over for potluck dinner.
 
 WINTER JAM ENTRY PLOT:
 Apprentice wakes Witch up
-    - M1: Apprentice cares for Witch
-    - M2: Witch collapsed 1-2 days ago
-    - M3: A big winter solstice dinner is planned for tonight
-Apprentice lights stove
+    - M1: Apprentice cares for Witch X
+    - M2: Witch collapsed some time ago X
+    - M3: A big winter solstice dinner is planned for tonight X
+Apprentice lights stove X (do I still need this?)
 Apprentice makes tea, eats w/ Witch
-    - M2: Apprentice recalls the visitors from a few days ago. found Witch collapsed in kitchen. One of the visitors is still in the cottage.
-    - M1: Apprentice regrets not being there to help
+    - M2: Apprentice recalls the visitors from a few days ago. found Witch collapsed in kitchen. X
+    - M1: Apprentice regrets not being there to help X
 Apprentice cooks with Witch
-    - M2: The Witch will speak with the remaining visitor before dinner tonight
+    - M2: One of the visitors is still in the cottage. The Witch will speak with the remaining visitor before dinner tonight
     - M3: There are other guests coming to have dinner tonight
 They set the table together
     - M2: The guest is introduced--one of the men who tried to kill the Witch, being held hostage
@@ -68,14 +68,14 @@ VAR WITCH_NAME="Rochelle"
 Perched on the cliffs of a rocky coast, a grove of cypress and pine watches over the northwest sea. 
 Moonlight trickles through its white tipped tree tops, glittering from the icy roof of a stout cottage within. 
 The snow that buries the foot of its cedar walls is bathed in an ochre glow. Behind frosty glass, a young girl holds a light over a woman entombed in a pile of knit orange pillows.
-TODO: Not a fever? Maybe the Apprentice is just waking her up?
-"Madame--you're burning up!" says {APPRENTICE_NAME}.
+"Madame--you need to rest!" says {APPRENTICE_NAME}.
 "I'll be okay, darling." Madame {WITCH_NAME} soothes. 
-She takes her student's hand from her brow, and {APPRENTICE_NAME} holds her tightly as she sits up.
+She takes her student's hand from her shoulder, and {APPRENTICE_NAME} holds her tightly as she sits up.
+TODO: Remove phylactery/mention it more?
 Her gaze falls to a black timepiece on a stack of worn books to her left. She gently settles it into the inner pocket of her robes. 
-"There's a lot of work that needs to be done for dinner tonight," she sighed, rising to her feet.
+"There's a lot of work that needs to be done for tonight," she sighed, rising to her feet.
 {APPRENTICE_NAME} bites her lip. "Maybe you should take it easy. I don't want you to faint again."
-Madame {WITCH_NAME} stifles a cough. "The winter solstice only comes once a year," she replied. "I wouldn't miss it for the world."
+Madame {WITCH_NAME} stifles a cough. "The winter solstice only comes once a year," she replied. "I wouldn't miss our dinner for the world."
 "And besides," she squeezes {APPRENTICE_NAME}'s hand. "With you around, what do I have to fear?"
 {APPRENTICE_NAME} beams. "I'll pour us some tea!"
 ->->
@@ -89,7 +89,7 @@ Madame {WITCH_NAME} stifles a cough. "The winter solstice only comes once a year
 ->->
 
 = on_first_enter
-In the den lived a black iron stove. It nestles in the western wall of the airy room.
+In the den lived a black iron stove. It nestled in the western wall of the airy room.
 ->->
 
 = on_enter
@@ -105,23 +105,30 @@ At the sound of her footsteps, the stove brightens. Its hatch opens eagerly.
 
 * (fed_stove)[Feed the stove]
 {APPRENTICE_NAME} serves her flame and closes the hatch.
-Its fire roars, and she is submerged in a wave of soft light.
-Candles twinkle from every corner of the room.
+The stove's hum submerges her in a wave of soft light.
+The darkness retreats. Candles twinkle from every corner of the room.
 ->->
 
 = make_snacks
 # CLEAR
+TODO: Set up the scene. Where is this barrel?
 {APPRENTICE_NAME} releases a flow of cool water from the barrel's spigot. The iron kettle is filled to its brim, and it is placed on the stovetop.
 She withdraws a little blue pot from the cupboard above her and uncorks it with a 'pop'. 
-The dried black herbs within fill the air with the fragrance of earth and spice.
-She had picked up this tea a few days ago at the market while shopping for supplies.
-In her absence, some guests had arrived at the cottage. Madame worked herself to the bone to see to their needs.
+Dried black herbs fill the air with the fragrance of earth and spice.
+She had picked up this tea a few days ago at the market down the road.
+It was then that guests arrived at the cottage. Madame worked herself to the bone for them.
 {APPRENTICE_NAME} had found her collapsed in the kitchen after they left. 
 "I should've been there," she muttered.
 The whistle of the kettle snaps her to attention.
-She 
-[Set plate of cookies, dried fruit, jerky]
-[Take to {WITCH_NAME}]
+* [Serve tea]
+# CLEAR
+- "Madame."
+Her voice dripped with ice.
+The woman yielded, chuckling as she put away her briar pipe.
+{APPRENTICE_NAME} placed the tray on the desk. She poured the teapot into two porcelain cups.
+She passes a steaming cup to the woman, and pours a splash of cream into her own.
+"So," as she stirs, "how many guests are we having tonight?"
+"Just three," Madame {WITCH_NAME} assures.
 ->->
 
 = cook_dinner
@@ -132,10 +139,12 @@ She
 [Replace meat, pour in stock, bring to a simmer]
 [Cover]
 ...
-"I'm going to talk with our guest tonight. I'll be right as rain after that."
-...
 The visitors did not stay long. Madame saw to that.
 It was fortunate that she was able to convince one of them to stay.
+...
+"I want to know how they found the cottage.""I'm going to talk with our guest before dinner."
+"Are you sure, Madame?"
+"He will be a great help for tonight."
 ...
 "Now remember," she continued. "How long do the mushrooms simmer in the stock?"
 "Between 6 to 12 hours," {APPRENTICE_NAME} recited. "The longer, the better."
@@ -157,11 +166,15 @@ The figure writhes at the sound of her voice.
 The ropes that hold his limbs to his chair strain, but give no slack.
 She tears the cloth from his face.
 ...
+{APPRENTICE_NAME} flutters about the room. She stops now and again to study the lines drawn in blue ink on the walls and floor.
+Letters and sigils scrawled in neat and tiny print.
+Shapes and symbols weave throughout the air, guided by her soft instruction.
+"...adjust output of intermediary scripts 3 through 5 by -10%..."
+...
 [Seat the diners]
 "I'll ask you one last time," she crooned. "How did you find this place?"
 "Fuck you," he spat. "My order will return. They're not going to let a monster like you live--"
 She thrusts the dagger into his stomach and unleashes a torrent of thick, inky smoke.
-""
 The man is swallowed in acrid shadows, drowning in his own gurgling screams.
 A sickening emerald light flows from the dagger. It travels along the length of her arm and inside her open mouth.
 She savors its taste. It was invigorating--intoxicating--and she knew no other flavor that gave her life the way this light did.
