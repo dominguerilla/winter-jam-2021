@@ -30,9 +30,10 @@ Apprentice lights stove X (do I still need this?)
 Apprentice makes tea, eats w/ Witch
     - M2: Apprentice recalls the visitors from a few days ago. found Witch collapsed in kitchen. X
     - M1: Apprentice regrets not being there to help X
+    - M3: There are other guests coming to have dinner tonight X
 Apprentice cooks with Witch
-    - M2: One of the visitors is still in the cottage. The Witch will speak with the remaining visitor before dinner tonight
-    - M3: There are other guests coming to have dinner tonight
+    - M2: One of the visitors is still in the cottage. 
+    - M3: The Witch will speak with the remaining visitor before dinner tonight
 They set the table together
     - M2: The guest is introduced--one of the men who tried to kill the Witch, being held hostage
         The Witch interrogates the assassin
@@ -42,13 +43,8 @@ Witch kills the man
     - M2: The man threatens the Witch--tells her that the rest of his 'order' is coming
     - M1: The Witch kills and 'absorbs' the man's life
 The demons arrive
-    - M3. The first demon arrives early, and sees the dead assassin.
-        It greets the Witch and Apprentice warmly, and politely asks about the corpse.
-        The Witch apologizes for the mess, and invites the demon to seat itself and be comfortable.
-        The demons (2 others arrive) offer their assistance
-        The Witch thanks them, and promises to discuss it after dinner.
     - M1. The Witch animates the body of the man to help serve dinner.
-    - M2. They will begin by finding the order's base of operations.
+    - M2: The Witch & Apprentice resolve to discuss the hostile order after dinner.
 END
 
 Attack/theft:
@@ -65,9 +61,10 @@ VAR WITCH_NAME="Rochelle"
 == PLOT ==
 = intro
 # CHAPTER 1
-Perched on the cliffs of a rocky coast, a grove of cypress and pine watches over the northwest sea. 
-Moonlight trickles through its white tipped tree tops, glittering from the icy roof of a stout cottage within. 
-The snow that buries the foot of its cedar walls is bathed in an ochre glow. Behind frosty glass, a young girl holds a light over a woman entombed in a pile of knit orange pillows.
+TODO: Mention that this is an inn?
+From the cliffs of a rocky coast, a grove of cypress and pine watches over the northern sea. 
+Moonlight trickles through white tree tops, glittering from the icy roof of a cottage within.
+The snow that buries the foot of its walls is bathed in an ochre glow. Behind frosty glass, a young girl holds a light over a woman entombed in a pile of knit orange pillows.
 "Madame--you need to rest!" says {APPRENTICE_NAME}.
 "I'll be okay, darling." Madame {WITCH_NAME} soothes. 
 She takes her student's hand from her shoulder, and {APPRENTICE_NAME} holds her tightly as she sits up.
@@ -100,7 +97,7 @@ Embers cast smoldering shadows on the room beyond the furniture.
 
 = light_flame
 {APPRENTICE_NAME} crept toward the stove, holding her fire aloft.
-Dormant candles awaken as she passes by and return to darkness as she recedes.
+Dormant candles awaken as she passes by and extinguish as she recedes.
 At the sound of her footsteps, the stove brightens. Its hatch opens eagerly.
 
 * (fed_stove)[Feed the stove]
@@ -112,30 +109,48 @@ The darkness retreats. Candles twinkle from every corner of the room.
 = make_snacks
 # CLEAR
 TODO: Set up the scene. Where is this barrel?
-{APPRENTICE_NAME} releases a flow of cool water from the barrel's spigot. The iron kettle is filled to its brim, and it is placed on the stovetop.
+{APPRENTICE_NAME} releases a flow of cool water from the barrel's spigot. The iron kettle is filled to its brim, and she places it on the stovetop.
 She withdraws a little blue pot from the cupboard above her and uncorks it with a 'pop'. 
 Dried black herbs fill the air with the fragrance of earth and spice.
 She had picked up this tea a few days ago at the market down the road.
-It was then that guests arrived at the cottage. Madame worked herself to the bone for them.
+It was then that guests arrived at the cottage. Madame worked herself to the bone.
 {APPRENTICE_NAME} had found her collapsed in the kitchen after they left. 
 "I should've been there," she muttered.
 The whistle of the kettle snaps her to attention.
 * [Serve tea]
 # CLEAR
+TODO: Set up the scene
 - "Madame."
 Her voice dripped with ice.
 The woman yielded, chuckling as she put away her briar pipe.
 {APPRENTICE_NAME} placed the tray on the desk. She poured the teapot into two porcelain cups.
 She passes a steaming cup to the woman, and pours a splash of cream into her own.
 "So," as she stirs, "how many guests are we having tonight?"
-"Just three," Madame {WITCH_NAME} assures.
+"Just three," Madame {WITCH_NAME} assures. "Plus one."
+
 ->->
 
 = cook_dinner
 # CLEAR
+TODO: Edit. Do I need this scene?
 [Chop up onions, garlic]
+She regards the onion carefully.
+With two swift cuts, she pierces its crisp outer skin, revealing a tender white heart.
+The onions are diced into uniform pieces. A sharp and sweet aroma lingers.
+...
+She strips the herb of its leaves, cutting them into a coarse powder.
+Slicing the garlic's tip, she crushes it with the side of her knife, and she tears the skin from its body before placing it into the stone bowl.
+After some mashing, the garlic, herbs, and salt are rendered into a paste.
+She stirs the paste into a bowl along with a bright dollop of butter.
 [Sear some meat]
+The oil shimmered. {APPRENTICE_NAME} smelled the air--and then places the salted meat into the pan.
+Its skin sizzles and crisps under the heat. She sears both sides of the chicken and removes it to a warm pan.
 [Deglaze fond, saute aromatics]
+A sticky brown surface lingers in the pan.
+She tosses the onions into the oil and fat, still shimmering from the heat.
+The onions go from sharp white to sweet brown.
+Adding a splash of stock, she scrapes the brown surface from the pan, and it melds with the onion's flavor.
+She adds the garlic-and-herb butter in last. It adds a nutty scent into the dish.
 [Replace meat, pour in stock, bring to a simmer]
 [Cover]
 ...
@@ -154,33 +169,55 @@ The lady smiles.
 
 = eat_dinner
 # CLEAR
-{APPRENTICE_NAME} cradled a candle as she stepped into the darkness.
+{APPRENTICE_NAME} cradled a candle, stepping into the dark.
 From the depths of the room, a slight rustle could be heard.
 She feels her way to the table and lights the lone candelabra on its surface.
 It shed its dim light on a small cabinet on her left, a stack of wooden barrels on her right, and a figure sitting across the table.
-Muffled moans escape from the black cloth wrapped around his head.
-{APPRENTICE_NAME} hums. She rummages through the cabinet and pulls out two plates and a handful of silver forks and knives.
-As she arranges them on the table, an enormous enamel pot descends the stairs, followed by Madame {WITCH_NAME}.
-The woman sets the pot next to the candelabra. "Oh good. Our guest is awake." 
+Muffled moans escape from the black cloth wrapped around its head.
+TODO: Mention the magic circles in the room
+{APPRENTICE_NAME} hums. She rummages through the cabinet and pulls out plates, a handful of silverware, and package bundled in green silk.
+As she arranges them, an enormous iron cauldron descends the stairs, followed by Madame {WITCH_NAME}.
+The woman sets the cauldron on the table. "Oh good. Our guest is awake." 
 The figure writhes at the sound of her voice.
-The ropes that hold his limbs to his chair strain, but give no slack.
-She tears the cloth from his face.
+The ropes that hold its limbs to its chair strain, but give no slack.
+* [Start the dinner]
+- 
+{APPRENTICE_NAME} whispers. The script on the table glows, and the cauldron begins to simmer.
+Madame {WITCH_NAME} carefully unwraps the bundle of silk. 
+It held a knife--its handle made of ebony and gold, its blade the color of the night sky.
+She cuts the cloth from the figure's face, revealing a bearded man in his forties. His mouth is stuffed with a rag.
+"I'm going to ask you some questions now," Madame {WITCH_NAME} croons. "If you answer them well, I'll let you leave before dinner starts."
+She pulls the rag from his mouth. He breaks into a coughing fit, and she continues.
+"Why did you attack me?"
+"That's...easy," he coughs. "It's what we...do."
+His gaze settles into a defiant glare.
 ...
-{APPRENTICE_NAME} flutters about the room. She stops now and again to study the lines drawn in blue ink on the walls and floor.
-Letters and sigils scrawled in neat and tiny print.
+{APPRENTICE_NAME} flutters about. She stops to study one of the many markings that twisted throughout the room.
+Letters and lines are scrawled on the table, walls, and floor.
 Shapes and symbols weave throughout the air, guided by her soft instruction.
-"...adjust output of intermediary scripts 3 through 5 by -10%..."
+"...adjust output of intermediary scripts 3 through 5 by -10%..." she mutters.
+The woman touches the tip of the knife into his cheek. It draws a bead of blood, and she drops it into the cauldron.
+It bubbles happily, and she replaces the lid.
+"Who sent you here?" Madame asks.
 ...
-[Seat the diners]
+...
+{APPRENTICE_NAME} takes her seat and watches. Her hands trembled; her preparations, complete.
+The cauldron shakes and boils.
 "I'll ask you one last time," she crooned. "How did you find this place?"
 "Fuck you," he spat. "My order will return. They're not going to let a monster like you live--"
 She thrusts the dagger into his stomach and unleashes a torrent of thick, inky smoke.
 The man is swallowed in acrid shadows, drowning in his own gurgling screams.
+TODO: Link this with the cauldron
 A sickening emerald light flows from the dagger. It travels along the length of her arm and inside her open mouth.
 She savors its taste. It was invigorating--intoxicating--and she knew no other flavor that gave her life the way this light did.
-The dust settles on a silent room. 
+The cauldron explodes, its lid , flooding the room in a smoky, earthy darkness.
+...
+The shadows ebb, and warm candlelight returns to the dining room.
+A soft glow settles on the table, where 
+
 TODO: The witch looks younger
 [Serve the food, eat]
+TODO: Demons arrive
 // After dinner, Witch recalls the first time the Apprentice saw the Winter Solstice ritual
 "{APPRENTICE_NAME}, I hope you were paying attention," said the woman. "Next winter, I'll be teaching you how to do it yourself."
 ->->
