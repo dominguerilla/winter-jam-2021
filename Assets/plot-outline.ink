@@ -75,6 +75,7 @@ Her gaze falls to a black timepiece on a stack of worn books to her left. She ge
 Madame {WITCH_NAME} stifles a cough. "The winter solstice only comes once a year," she replied. "I wouldn't miss our dinner for the world."
 "And besides," she squeezes {APPRENTICE_NAME}'s hand. "With you around, what do I have to fear?"
 {APPRENTICE_NAME} beams. "I'll pour us some tea!"
+And so she steps through the maroon curtains of the study towards the den.
 ->->
 
 == Den ==
@@ -102,14 +103,17 @@ At the sound of her footsteps, the stove brightens. Its hatch opens eagerly.
 
 * (fed_stove)[Feed the stove]
 {APPRENTICE_NAME} serves her flame and closes the hatch.
-The stove's hum submerges her in a wave of soft light.
+The stove hums--submerging her in a wave of soft light.
 The darkness retreats. Candles twinkle from every corner of the room.
+
 ->->
 
 = make_snacks
 # CLEAR
-TODO: Set up the scene. Where is this barrel?
-{APPRENTICE_NAME} releases a flow of cool water from the barrel's spigot. The iron kettle is filled to its brim, and she places it on the stovetop.
+{APPRENTICE_NAME} can see the iron kettle hanging from a hook above the stove.
+She takes it and moves towards a barrel to her left, with a spigot inserted on its side.
+With a flick of her hand, she releases a flow of cool water from the spout. 
+The kettle is filled to its brim, and it is placed on the stovetop.
 She withdraws a little blue pot from the cupboard above her and uncorks it with a 'pop'. 
 Dried black herbs fill the air with the fragrance of earth and spice.
 She had picked up this tea a few days ago at the market down the road.
@@ -133,7 +137,6 @@ She passes a steaming cup to the woman, and pours a splash of cream into her own
 = cook_dinner
 # CLEAR
 TODO: Edit. Do I need this scene?
-[Chop up onions, garlic]
 She regards the onion carefully.
 With two swift cuts, she pierces its crisp outer skin, revealing a tender white heart.
 The onions are diced into uniform pieces. A sharp and sweet aroma lingers.
@@ -142,10 +145,10 @@ She strips the herb of its leaves, cutting them into a coarse powder.
 Slicing the garlic's tip, she crushes it with the side of her knife, and she tears the skin from its body before placing it into the stone bowl.
 After some mashing, the garlic, herbs, and salt are rendered into a paste.
 She stirs the paste into a bowl along with a bright dollop of butter.
-[Sear some meat]
+...
 The oil shimmered. {APPRENTICE_NAME} smelled the air--and then places the salted meat into the pan.
 Its skin sizzles and crisps under the heat. She sears both sides of the chicken and removes it to a warm pan.
-[Deglaze fond, saute aromatics]
+...
 A sticky brown surface lingers in the pan.
 She tosses the onions into the oil and fat, still shimmering from the heat.
 The onions go from sharp white to sweet brown.
@@ -172,17 +175,17 @@ The lady smiles.
 {APPRENTICE_NAME} cradled a candle, stepping into the dark.
 From the depths of the room, a slight rustle could be heard.
 She feels her way to the table and lights the lone candelabra on its surface.
-It shed its dim light on a small cabinet on her left, a stack of wooden barrels on her right, and a figure sitting across the table.
+It shed a dim light on a small cabinet on her left, a stack of wooden barrels on her right, and a figure sitting across the table.
 Muffled moans escape from the black cloth wrapped around its head.
-TODO: Mention the magic circles in the room
+Sigils and lines written in thick ink mark the walls, floor, and table in the room.
 {APPRENTICE_NAME} hums. She rummages through the cabinet and pulls out plates, a handful of silverware, and package bundled in green silk.
 As she arranges them, an enormous iron cauldron descends the stairs, followed by Madame {WITCH_NAME}.
 The woman sets the cauldron on the table. "Oh good. Our guest is awake." 
 The figure writhes at the sound of her voice.
 The ropes that hold its limbs to its chair strain, but give no slack.
-* [Start the dinner]
+* [START THE DINNER]
 - 
-{APPRENTICE_NAME} whispers. The script on the table glows, and the cauldron begins to simmer.
+{APPRENTICE_NAME} whispers. Around the room, the markings glow, and the cauldron begins to simmer.
 Madame {WITCH_NAME} carefully unwraps the bundle of silk. 
 It held a knife--its handle made of ebony and gold, its blade the color of the night sky.
 She cuts the cloth from the figure's face, revealing a bearded man in his forties. His mouth is stuffed with a rag.
@@ -193,15 +196,17 @@ She pulls the rag from his mouth. He breaks into a coughing fit, and she continu
 His gaze settles into a defiant glare.
 ...
 {APPRENTICE_NAME} flutters about. She stops to study one of the many markings that twisted throughout the room.
-Letters and lines are scrawled on the table, walls, and floor.
 Shapes and symbols weave throughout the air, guided by her soft instruction.
-"...adjust output of intermediary scripts 3 through 5 by -10%..." she mutters.
-The woman touches the tip of the knife into his cheek. It draws a bead of blood, and she drops it into the cauldron.
+"...adjust output of intermediary script 3 through 5 by -10%..." she mutters.
+The woman touches the black tip of the knife into his cheek, eliciting a groan. 
+It draws a bead of blood, and she drops it into the cauldron.
 It bubbles happily, and she replaces the lid.
 "Who sent you here?" Madame asks.
+"No one!" he yells. Beads of sweat drip down his forehead, and the cut on his cheek continues to bleed.
+The cauldron--and his blood--begin to shine with an eerie green light.
 ...
 ...
-{APPRENTICE_NAME} takes her seat and watches. Her hands trembled; her preparations, complete.
+{APPRENTICE_NAME} watches from her seat. Her hands tremble; her preparations, complete.
 The cauldron shakes and boils.
 "I'll ask you one last time," she crooned. "How did you find this place?"
 "Fuck you," he spat. "My order will return. They're not going to let a monster like you live--"
@@ -210,7 +215,7 @@ The man is swallowed in acrid shadows, drowning in his own gurgling screams.
 TODO: Link this with the cauldron
 A sickening emerald light flows from the dagger. It travels along the length of her arm and inside her open mouth.
 She savors its taste. It was invigorating--intoxicating--and she knew no other flavor that gave her life the way this light did.
-The cauldron explodes, its lid , flooding the room in a smoky, earthy darkness.
+The cauldron explodes, flooding the room in a smoky, earthy darkness.
 ...
 The shadows ebb, and warm candlelight returns to the dining room.
 A soft glow settles on the table, where 
