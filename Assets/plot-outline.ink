@@ -174,7 +174,7 @@ The lady smiles.
 # CLEAR
 {APPRENTICE_NAME} cradled a candle, stepping into the dark.
 From the depths of the room, a slight rustle could be heard.
-She feels her way to the table and lights the lone candelabra on its surface.
+She feels her way to a circular table and lights the lone candelabra on its surface.
 It shed a dim light on a small cabinet on her left, a stack of wooden barrels on her right, and a figure sitting across the table.
 Muffled moans escape from the black cloth wrapped around its head.
 Sigils and lines written in thick ink mark the walls, floor, and table in the room.
@@ -205,7 +205,6 @@ It bubbles happily, and she replaces the lid.
 "No one!" he yells. Beads of sweat drip down his forehead, and the cut on his cheek continues to bleed.
 The cauldron--and his blood--begin to shine with an eerie green light.
 ...
-...
 {APPRENTICE_NAME} watches from her seat. Her hands tremble; her preparations, complete.
 The cauldron shakes and boils.
 "I'll ask you one last time," she crooned. "How did you find this place?"
@@ -218,7 +217,10 @@ She savors its taste. It was invigorating--intoxicating--and she knew no other f
 The cauldron explodes, flooding the room in a smoky, earthy darkness.
 ...
 The shadows ebb, and warm candlelight returns to the dining room.
-A soft glow settles on the table, where 
+A soft glow settles on the table. 
+At one end, the man sits still and straight, and he regards the others in the room politely.
+Besides {APPRENTICE_NAME}, three new figures sit along the sides of the table.
+
 
 TODO: The witch looks younger
 [Serve the food, eat]
