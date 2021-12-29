@@ -178,50 +178,52 @@ She feels her way to a circular table and lights the lone candelabra on its surf
 It shed a dim light on a small cabinet on her left, a stack of wooden barrels on her right, and a figure sitting across the table.
 Muffled moans escape from the black cloth wrapped around its head.
 Sigils and lines written in thick ink mark the walls, floor, and table in the room.
-{APPRENTICE_NAME} hums. She rummages through the cabinet and pulls out plates, a handful of silverware, and package bundled in green silk.
+{APPRENTICE_NAME} hums. She rummages through the cabinet and pulls out a stack of plates, a handful of silverware, and package bundled in green silk.
 As she arranges them, an enormous iron cauldron descends the stairs, followed by Madame {WITCH_NAME}.
 The woman sets the cauldron on the table. "Oh good. Our guest is awake." 
 The figure writhes at the sound of her voice.
 The ropes that hold its limbs to its chair strain, but give no slack.
-* [START THE DINNER]
+* [SET THE TABLE]
 - 
 {APPRENTICE_NAME} whispers. Around the room, the markings glow, and the cauldron begins to simmer.
 Madame {WITCH_NAME} carefully unwraps the bundle of silk. 
 It held a knife--its handle made of ebony and gold, its blade the color of the night sky.
 She cuts the cloth from the figure's face, revealing a bearded man in his forties. His mouth is stuffed with a rag.
 "I'm going to ask you some questions now," Madame {WITCH_NAME} croons. "If you answer them well, I'll let you leave before dinner starts."
-She pulls the rag from his mouth. He breaks into a coughing fit, and she continues.
-"Why did you attack me?"
+She pulls the rag from his mouth. He breaks into a coughing fit.
+She continues. "Why did you attack me?"
 "That's...easy," he coughs. "It's what we...do."
 His gaze settles into a defiant glare.
+TODO: More?
 ...
-{APPRENTICE_NAME} flutters about. She stops to study one of the many markings that twisted throughout the room.
-Shapes and symbols weave throughout the air, guided by her soft instruction.
+{APPRENTICE_NAME} flutters about. She stops to study one of the markings that twisted throughout the room.
+Shapes and symbols weave through the air, guided by her soft instruction.
 "...adjust output of intermediary script 3 through 5 by -10%..." she mutters.
+"Who sent you here?" Madame asks.
+"No one!" he yells. The cauldron seethes. Beads of sweat drip down his forehead.
+TODO: maybe have her 'confirm' the ritual after he insults the apprentice?
 The woman touches the black tip of the knife into his cheek, eliciting a groan. 
 It draws a bead of blood, and she drops it into the cauldron.
 It bubbles happily, and she replaces the lid.
-"Who sent you here?" Madame asks.
-"No one!" he yells. Beads of sweat drip down his forehead, and the cut on his cheek continues to bleed.
 The cauldron--and his blood--begin to shine with an eerie green light.
+"Too late to leave now," whispered Madame {WITCH_NAME}.
 ...
 {APPRENTICE_NAME} watches from her seat. Her hands tremble; her preparations, complete.
 The cauldron shakes and boils.
 "I'll ask you one last time," she crooned. "How did you find this place?"
-"Fuck you," he spat. "My order will return. They're not going to let a monster like you live--"
-She thrusts the dagger into his stomach and unleashes a torrent of thick, inky smoke.
-The man is swallowed in acrid shadows, drowning in his own gurgling screams.
-TODO: Link this with the cauldron
-A sickening emerald light flows from the dagger. It travels along the length of her arm and inside her open mouth.
+"Fuck you," he spat. "My order will return. They're not going to let a monster like you live."
+* [SEAT THE GUESTS]
+She plunges the dagger into his stomach.
+A sickening emerald light bursts from his eyes and mouth, drowning him in his own gurgling scream.
+The cauldron roars, shining green from beneath its shuddering lid.
+Some light oozes from the dagger. It seeps into the flesh of her arm.
 She savors its taste. It was invigorating--intoxicating--and she knew no other flavor that gave her life the way this light did.
-The cauldron explodes, flooding the room in a smoky, earthy darkness.
+The cauldron erupts, flooding the room in a silent, inky darkness.
 ...
 The shadows ebb, and warm candlelight returns to the dining room.
 A soft glow settles on the table. 
 At one end, the man sits still and straight, and he regards the others in the room politely.
 Besides {APPRENTICE_NAME}, three new figures sit along the sides of the table.
-
-
 TODO: The witch looks younger
 [Serve the food, eat]
 TODO: Demons arrive
