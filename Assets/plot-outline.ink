@@ -118,7 +118,7 @@ She withdraws a little blue pot from the cupboard above her and uncorks it with 
 Dried black herbs fill the air with the fragrance of earth and spice.
 She had picked up this tea a few days ago at the market down the road.
 It was then that guests arrived at the cottage. Madame worked herself to the bone.
-{APPRENTICE_NAME} had found her collapsed in the kitchen after they left. 
+{APPRENTICE_NAME} had found her collapsed in the kitchen after they left.
 "I should've been there," she muttered.
 The whistle of the kettle snaps her to attention.
 * [Serve tea]
@@ -194,12 +194,11 @@ She pulls the rag from his mouth. He breaks into a coughing fit.
 She continues. "Why did you attack me?"
 "That's...easy," he coughs. "It's what we...do."
 His gaze settles into a defiant glare.
-TODO: More?
-...
+TODO: transition
 {APPRENTICE_NAME} flutters about. She stops to study one of the markings that twisted throughout the room.
-Shapes and symbols weave through the air, guided by her soft instruction.
+Shapes and symbols weave through the air, guided by her subtle instruction.
 "...adjust output of intermediary script 3 through 5 by -10%..." she mutters.
-"Who sent you here?" Madame asks.
+"How did you find this place?" Madame asks.
 "No one!" he yells. The cauldron seethes. Beads of sweat drip down his forehead.
 TODO: maybe have her 'confirm' the ritual after he insults the apprentice?
 The woman touches the black tip of the knife into his cheek, eliciting a groan. 
@@ -207,23 +206,29 @@ It draws a bead of blood, and she drops it into the cauldron.
 It bubbles happily, and she replaces the lid.
 The cauldron--and his blood--begin to shine with an eerie green light.
 "Too late to leave now," whispered Madame {WITCH_NAME}.
-...
+TODO: transition
 {APPRENTICE_NAME} watches from her seat. Her hands tremble; her preparations, complete.
 The cauldron shakes and boils.
-"I'll ask you one last time," she crooned. "How did you find this place?"
-"Fuck you," he spat. "My order will return. They're not going to let a monster like you live."
+"One last question," Madame {WITCH_NAME} crooned. "Where is your little gang right now?"
+"Fuck you," he spat. "The order will return. They're not going to let a monster like you live."
 * [SEAT THE GUESTS]
 She plunges the dagger into his stomach.
-A sickening emerald light bursts from his eyes and mouth, drowning him in his own gurgling scream.
-The cauldron roars, shining green from beneath its shuddering lid.
-Some light oozes from the dagger. It seeps into the flesh of her arm.
+A sickening emerald light bursts from his wound, eyes, and mouth--drowning him in his own gurgling scream.
+The cauldron roars,  blazing from beneath its shuddering lid.
+The light oozing from the dagger snakes up her arm and melds into her flesh.
 She savors its taste. It was invigorating--intoxicating--and she knew no other flavor that gave her life the way this light did.
 The cauldron erupts, flooding the room in a silent, inky darkness.
-...
-The shadows ebb, and warm candlelight returns to the dining room.
-A soft glow settles on the table. 
-At one end, the man sits still and straight, and he regards the others in the room politely.
-Besides {APPRENTICE_NAME}, three new figures sit along the sides of the table.
+* [...]
+- The shadows ebb, and candlelit warmth returns to the room.
+The empty plates around the cauldron are now filled to their brims with food.
+TODO: Food descriptions.
+Tender beef braised with onions and wine. 
+Carrots glazed with brown sugar and fresh herbs.
+Pork chops 
+Thick slices of bread, toasted and slathered with butter, garlic, and cheese.
+At one end, the man sits straight and still, his blank eyes regarding the others in the room politely.
+Besides {APPRENTICE_NAME}, three new figures are seated along the sides of the table.
+
 TODO: The witch looks younger
 [Serve the food, eat]
 TODO: Demons arrive
