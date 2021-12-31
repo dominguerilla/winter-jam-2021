@@ -224,8 +224,9 @@ The empty plates around the cauldron are now filled to their brims with food.
 TODO: Food descriptions.
 Tender beef braised with onions and wine. 
 Carrots glazed with brown sugar and fresh herbs.
-Pork chops 
-Thick slices of bread, toasted and slathered with butter, garlic, and cheese.
+Roasted pork chops slathered in a rich mushroom gravy.
+Thick slices of bread, toasted and brushed with butter, garlic, and cheese.
+
 At one end, the man sits straight and still, his blank eyes regarding the others in the room politely.
 Besides {APPRENTICE_NAME}, three new figures are seated along the sides of the table.
 
