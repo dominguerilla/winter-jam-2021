@@ -98,7 +98,7 @@ The darkness retreats. Candles twinkle from every corner of the cottage.
 = make_snacks
 # CLEAR
 An iron kettle hangs from a hook above the stove.
-{APPRENTICE_NAME} takes it towards a barrel standing to her left.
+{APPRENTICE_NAME} takes it towards a barrel to her left.
 With a flick of her hand, she releases a flow of cool water from the spout. 
 The kettle is filled to its brim, and it is placed on the stovetop.
 She withdraws a little blue pot from the cupboard above her and uncorks it with a 'pop'. 
@@ -137,7 +137,8 @@ Muffled moans escape from the black cloth wrapped around its head.
 Sigils and lines written in thick ink mark the walls, floor, and table in the room.
 {APPRENTICE_NAME} hums. She rummages through the cabinet and pulls out a stack of plates, a handful of silverware, and package bundled in green silk.
 As she arranges them, an enormous iron cauldron descends the stairs, followed by Madame {WITCH_NAME}.
-The woman sets the cauldron on the table. "Oh good. Our guest is awake." 
+The woman sets the cauldron on the table. Its contents slosh to a stop beneath its lid.
+"Oh good. Our guest is awake." 
 The figure writhes at the sound of her voice.
 The ropes that hold its limbs to its chair strain, but give no slack.
 * [SET THE TABLE]
@@ -180,6 +181,7 @@ The light oozing from the dagger snakes up her arm and melds into her flesh.
 She savors its taste. It was invigorating--intoxicating--and she knew no other flavor that gave her life the way this light did.
 The cauldron erupts, flooding the room in a silent, inky darkness.
 * [...]
+# CLEAR
 - The shadows ebb, and the mellow candlelight returns.
 Quiet vapors hang in the air above the empty cauldron.
 The surrounding plates have been filled to their brims with food.
@@ -199,9 +201,9 @@ The well-fitted suit they wore was as black as their cloven hooves, and all four
 The man plops a scoop of creamy mashed potatoes onto a plate. "Thank you," {APPRENTICE_NAME} mentions.
 "{APPRENTICE_NAME}! Are you finally making the pact?" the creature asks.
 "Madame says I'm too young," she pouted through a mouthful of potato.
-"No business tonight, Balph." said Madame {WITCH_NAME}. "Just dinner with an old friend."
+"No business tonight, Balph." smiled Madame {WITCH_NAME}. "Just dinner with an old friend."
 "Dinner!" the creature roars with laughter. "Out of all the humans I know, you two are my favorites."
-"Please," the woman replied. "At this point, I'm about as human as you are."
+"Of course," he continues, "at this point, you're about as human as I am."
 ->->
 
 /*
